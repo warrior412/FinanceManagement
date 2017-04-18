@@ -50,6 +50,12 @@
     <Compile Include="Custom\CustomListViewItem.Designer.cs">
       <DependentUpon>CustomListViewItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom\CustomTitlePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom\CustomTitlePanel.Designer.cs">
+      <DependentUpon>CustomTitlePanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSet\FinanceManagement.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -71,6 +77,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Custom\CustomListViewItem.resx">
       <DependentUpon>CustomListViewItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom\CustomTitlePanel.resx">
+      <DependentUpon>CustomTitlePanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmWalletManagement.resx">
       <DependentUpon>frmWalletManagement.cs</DependentUpon>

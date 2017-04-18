@@ -17,10 +17,11 @@ namespace FinanceManagement
         {
             InitializeComponent();
             lvWallet.RowStyles.Clear();
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i <10; i++)
             {
                 lvWallet.RowCount = lvWallet.RowCount + 1;
                 var item = new CustomListViewItem();
+                item.WalletID = i.ToString();
                 item.OnItemClick += item_OnItemClick;
                 item.Dock = DockStyle.Fill;
                 lvWallet.Controls.Add(item, 0, i);
@@ -31,8 +32,32 @@ namespace FinanceManagement
         void item_OnItemClick(object sender, EventArgs e)
         {
             CustomListViewItem item = (CustomListViewItem)sender;
-            item.BackColor = Color.AliceBlue;
+            
+            foreach(var c in lvWallet.Controls)
+            {
+                if(c.GetType().Equals(typeof(CustomListViewItem)))
+                {
+                    CustomListViewItem selectedItem = c as CustomListViewItem;
+                    if (selectedItem.WalletID.Equals(item.WalletID))
+                    {
+                        selectedItem.BackColor = Color.LightBlue;
+                    }
+                    else
+                        selectedItem.BackColor = Color.Transparent;
+                }
+            }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var s = this.Size;
+        }
+
+        private void btnAddNewWallet_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
     }
 }

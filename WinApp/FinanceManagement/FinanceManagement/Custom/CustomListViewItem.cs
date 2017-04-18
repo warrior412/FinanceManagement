@@ -13,6 +13,14 @@ namespace FinanceManagement.Custom
     public partial class CustomListViewItem : UserControl
     {
         public event EventHandler OnItemClick;
+
+        private string walletID;
+
+        public string WalletID
+        {
+            get { return walletID; }
+            set { walletID = value; }
+        }
         public CustomListViewItem()
         {
             InitializeComponent();

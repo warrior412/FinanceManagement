@@ -28,94 +28,145 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.layoutMain = new System.Windows.Forms.TableLayoutPanel();
             this.lvWallet = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.btnAddNewWallet = new System.Windows.Forms.Button();
+            this.layoutListWallet = new System.Windows.Forms.TableLayoutPanel();
+            this.layoutDatailInfo = new System.Windows.Forms.TableLayoutPanel();
+            this.customTitlePanel5 = new FinanceManagement.Custom.CustomTitlePanel();
+            this.customTitlePanel1 = new FinanceManagement.Custom.CustomTitlePanel();
+            this.layoutMain.SuspendLayout();
+            this.layoutListWallet.SuspendLayout();
+            this.layoutDatailInfo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // layoutMain
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 400F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.groupBox2, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 1);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(664, 405);
-            this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.lvWallet);
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(394, 399);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Danh sách Ví tiền";
+            this.layoutMain.ColumnCount = 2;
+            this.layoutMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 400F));
+            this.layoutMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.layoutMain.Controls.Add(this.layoutListWallet, 0, 0);
+            this.layoutMain.Controls.Add(this.layoutDatailInfo, 1, 0);
+            this.layoutMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutMain.Location = new System.Drawing.Point(0, 0);
+            this.layoutMain.Margin = new System.Windows.Forms.Padding(0);
+            this.layoutMain.Name = "layoutMain";
+            this.layoutMain.RowCount = 1;
+            this.layoutMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.layoutMain.Size = new System.Drawing.Size(1370, 621);
+            this.layoutMain.TabIndex = 0;
             // 
             // lvWallet
             // 
             this.lvWallet.AutoScroll = true;
-            this.lvWallet.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.lvWallet.ColumnCount = 1;
             this.lvWallet.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.lvWallet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lvWallet.Location = new System.Drawing.Point(3, 16);
+            this.lvWallet.Location = new System.Drawing.Point(5, 37);
             this.lvWallet.Name = "lvWallet";
             this.lvWallet.RowCount = 1;
             this.lvWallet.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.lvWallet.Size = new System.Drawing.Size(388, 380);
+            this.lvWallet.Size = new System.Drawing.Size(390, 535);
             this.lvWallet.TabIndex = 0;
             // 
-            // groupBox2
+            // btnAddNewWallet
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Location = new System.Drawing.Point(403, 3);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(398, 399);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Hoạt động";
+            this.btnAddNewWallet.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnAddNewWallet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAddNewWallet.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnAddNewWallet.FlatAppearance.BorderSize = 0;
+            this.btnAddNewWallet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddNewWallet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddNewWallet.Location = new System.Drawing.Point(3, 578);
+            this.btnAddNewWallet.Margin = new System.Windows.Forms.Padding(1);
+            this.btnAddNewWallet.Name = "btnAddNewWallet";
+            this.btnAddNewWallet.Size = new System.Drawing.Size(394, 38);
+            this.btnAddNewWallet.TabIndex = 1;
+            this.btnAddNewWallet.Text = "Add new wallet";
+            this.btnAddNewWallet.UseVisualStyleBackColor = false;
+            this.btnAddNewWallet.Click += new System.EventHandler(this.btnAddNewWallet_Click);
+            // 
+            // layoutListWallet
+            // 
+            this.layoutListWallet.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.layoutListWallet.ColumnCount = 1;
+            this.layoutListWallet.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.layoutListWallet.Controls.Add(this.btnAddNewWallet, 0, 2);
+            this.layoutListWallet.Controls.Add(this.lvWallet, 0, 1);
+            this.layoutListWallet.Controls.Add(this.customTitlePanel5, 0, 0);
+            this.layoutListWallet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutListWallet.Location = new System.Drawing.Point(0, 0);
+            this.layoutListWallet.Margin = new System.Windows.Forms.Padding(0);
+            this.layoutListWallet.Name = "layoutListWallet";
+            this.layoutListWallet.RowCount = 3;
+            this.layoutListWallet.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.layoutListWallet.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.layoutListWallet.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.layoutListWallet.Size = new System.Drawing.Size(400, 621);
+            this.layoutListWallet.TabIndex = 2;
+            // 
+            // layoutDatailInfo
+            // 
+            this.layoutDatailInfo.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
+            this.layoutDatailInfo.ColumnCount = 1;
+            this.layoutDatailInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.layoutDatailInfo.Controls.Add(this.customTitlePanel1, 0, 0);
+            this.layoutDatailInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutDatailInfo.Location = new System.Drawing.Point(400, 0);
+            this.layoutDatailInfo.Margin = new System.Windows.Forms.Padding(0);
+            this.layoutDatailInfo.Name = "layoutDatailInfo";
+            this.layoutDatailInfo.RowCount = 2;
+            this.layoutDatailInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.layoutDatailInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.layoutDatailInfo.Size = new System.Drawing.Size(970, 621);
+            this.layoutDatailInfo.TabIndex = 3;
+            // 
+            // customTitlePanel5
+            // 
+            this.customTitlePanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customTitlePanel5.Location = new System.Drawing.Point(2, 2);
+            this.customTitlePanel5.Margin = new System.Windows.Forms.Padding(0);
+            this.customTitlePanel5.Name = "customTitlePanel5";
+            this.customTitlePanel5.Size = new System.Drawing.Size(396, 30);
+            this.customTitlePanel5.TabIndex = 2;
+            // 
+            // customTitlePanel1
+            // 
+            this.customTitlePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customTitlePanel1.Location = new System.Drawing.Point(2, 2);
+            this.customTitlePanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.customTitlePanel1.Name = "customTitlePanel1";
+            this.customTitlePanel1.Size = new System.Drawing.Size(966, 30);
+            this.customTitlePanel1.TabIndex = 0;
             // 
             // frmWalletManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(665, 407);
+            this.ClientSize = new System.Drawing.Size(1370, 621);
             this.ControlBox = false;
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.layoutMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmWalletManagement";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý ví tiền";
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.layoutMain.ResumeLayout(false);
+            this.layoutListWallet.ResumeLayout(false);
+            this.layoutDatailInfo.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TableLayoutPanel layoutMain;
         private System.Windows.Forms.TableLayoutPanel lvWallet;
+        private System.Windows.Forms.Button btnAddNewWallet;
+        private System.Windows.Forms.TableLayoutPanel layoutListWallet;
+        private Custom.CustomTitlePanel customTitlePanel5;
+        private System.Windows.Forms.TableLayoutPanel layoutDatailInfo;
+        private Custom.CustomTitlePanel customTitlePanel1;
     }
 }
