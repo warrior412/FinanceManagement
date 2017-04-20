@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.layout1 = new System.Windows.Forms.TableLayoutPanel();
             this.layout1_1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnAddNewWallet = new System.Windows.Forms.Button();
@@ -89,6 +90,34 @@
             this.customTitlePanel6 = new FinanceManagement.Custom.CustomTitlePanel();
             this.customTitlePanel7 = new FinanceManagement.Custom.CustomTitlePanel();
             this.m_WalletTableAdapter1 = new FinanceManagement.DataSet.FinanceManagementTableAdapters.M_WalletTableAdapter();
+            this.v_ActivityTableAdapter1 = new FinanceManagement.DataSet.FinanceManagementTableAdapters.v_ActivityTableAdapter();
+            this.financeManagement = new FinanceManagement.DataSet.FinanceManagement();
+            this.vActivityBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.createDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.walletDestIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.walletDestNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.walletDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activityContentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activityTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activityStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vActivityBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.createDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.walletDestIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.walletDestNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.walletDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activityContentDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activityTypeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activityStatusDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amountDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.layout1.SuspendLayout();
             this.layout1_1.SuspendLayout();
             this.layout1_2.SuspendLayout();
@@ -102,6 +131,9 @@
             this.layoutSummary.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.financeManagement)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vActivityBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vActivityBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // layout1
@@ -270,16 +302,49 @@
             // 
             // dgvWithDraw
             // 
+            this.dgvWithDraw.AllowUserToAddRows = false;
+            this.dgvWithDraw.AllowUserToDeleteRows = false;
+            this.dgvWithDraw.AutoGenerateColumns = false;
             this.dgvWithDraw.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvWithDraw.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.createDateDataGridViewTextBoxColumn,
+            this.categoryIDDataGridViewTextBoxColumn,
+            this.categoryNameDataGridViewTextBoxColumn,
+            this.itemIDDataGridViewTextBoxColumn,
+            this.itemNameDataGridViewTextBoxColumn,
+            this.walletDestIDDataGridViewTextBoxColumn,
+            this.walletDestNameDataGridViewTextBoxColumn,
+            this.walletDataGridViewTextBoxColumn,
+            this.activityContentDataGridViewTextBoxColumn,
+            this.activityTypeDataGridViewTextBoxColumn,
+            this.activityStatusDataGridViewTextBoxColumn,
+            this.amountDataGridViewTextBoxColumn});
+            this.dgvWithDraw.DataSource = this.vActivityBindingSource;
             this.dgvWithDraw.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvWithDraw.Location = new System.Drawing.Point(5, 27);
             this.dgvWithDraw.Name = "dgvWithDraw";
+            this.dgvWithDraw.ReadOnly = true;
             this.dgvWithDraw.Size = new System.Drawing.Size(756, 264);
             this.dgvWithDraw.TabIndex = 2;
             // 
             // dgvDeposit
             // 
+            this.dgvDeposit.AutoGenerateColumns = false;
             this.dgvDeposit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDeposit.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.createDateDataGridViewTextBoxColumn1,
+            this.categoryIDDataGridViewTextBoxColumn1,
+            this.categoryNameDataGridViewTextBoxColumn1,
+            this.itemIDDataGridViewTextBoxColumn1,
+            this.itemNameDataGridViewTextBoxColumn1,
+            this.walletDestIDDataGridViewTextBoxColumn1,
+            this.walletDestNameDataGridViewTextBoxColumn1,
+            this.walletDataGridViewTextBoxColumn1,
+            this.activityContentDataGridViewTextBoxColumn1,
+            this.activityTypeDataGridViewTextBoxColumn1,
+            this.activityStatusDataGridViewTextBoxColumn1,
+            this.amountDataGridViewTextBoxColumn1});
+            this.dgvDeposit.DataSource = this.vActivityBindingSource1;
             this.dgvDeposit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDeposit.Location = new System.Drawing.Point(5, 321);
             this.dgvDeposit.Name = "dgvDeposit";
@@ -823,6 +888,181 @@
             // 
             this.m_WalletTableAdapter1.ClearBeforeFill = true;
             // 
+            // v_ActivityTableAdapter1
+            // 
+            this.v_ActivityTableAdapter1.ClearBeforeFill = true;
+            // 
+            // financeManagement
+            // 
+            this.financeManagement.DataSetName = "FinanceManagement";
+            this.financeManagement.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // vActivityBindingSource
+            // 
+            this.vActivityBindingSource.DataMember = "v_Activity";
+            this.vActivityBindingSource.DataSource = this.financeManagement;
+            // 
+            // createDateDataGridViewTextBoxColumn
+            // 
+            this.createDateDataGridViewTextBoxColumn.DataPropertyName = "Create_Date";
+            this.createDateDataGridViewTextBoxColumn.HeaderText = "Create_Date";
+            this.createDateDataGridViewTextBoxColumn.Name = "createDateDataGridViewTextBoxColumn";
+            this.createDateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // categoryIDDataGridViewTextBoxColumn
+            // 
+            this.categoryIDDataGridViewTextBoxColumn.DataPropertyName = "Category_ID";
+            this.categoryIDDataGridViewTextBoxColumn.HeaderText = "Category_ID";
+            this.categoryIDDataGridViewTextBoxColumn.Name = "categoryIDDataGridViewTextBoxColumn";
+            this.categoryIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // categoryNameDataGridViewTextBoxColumn
+            // 
+            this.categoryNameDataGridViewTextBoxColumn.DataPropertyName = "Category_Name";
+            this.categoryNameDataGridViewTextBoxColumn.HeaderText = "Category_Name";
+            this.categoryNameDataGridViewTextBoxColumn.Name = "categoryNameDataGridViewTextBoxColumn";
+            this.categoryNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // itemIDDataGridViewTextBoxColumn
+            // 
+            this.itemIDDataGridViewTextBoxColumn.DataPropertyName = "Item_ID";
+            this.itemIDDataGridViewTextBoxColumn.HeaderText = "Item_ID";
+            this.itemIDDataGridViewTextBoxColumn.Name = "itemIDDataGridViewTextBoxColumn";
+            this.itemIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // itemNameDataGridViewTextBoxColumn
+            // 
+            this.itemNameDataGridViewTextBoxColumn.DataPropertyName = "Item_Name";
+            this.itemNameDataGridViewTextBoxColumn.HeaderText = "Item_Name";
+            this.itemNameDataGridViewTextBoxColumn.Name = "itemNameDataGridViewTextBoxColumn";
+            this.itemNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // walletDestIDDataGridViewTextBoxColumn
+            // 
+            this.walletDestIDDataGridViewTextBoxColumn.DataPropertyName = "WalletDestID";
+            this.walletDestIDDataGridViewTextBoxColumn.HeaderText = "WalletDestID";
+            this.walletDestIDDataGridViewTextBoxColumn.Name = "walletDestIDDataGridViewTextBoxColumn";
+            this.walletDestIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // walletDestNameDataGridViewTextBoxColumn
+            // 
+            this.walletDestNameDataGridViewTextBoxColumn.DataPropertyName = "WalletDestName";
+            this.walletDestNameDataGridViewTextBoxColumn.HeaderText = "WalletDestName";
+            this.walletDestNameDataGridViewTextBoxColumn.Name = "walletDestNameDataGridViewTextBoxColumn";
+            this.walletDestNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // walletDataGridViewTextBoxColumn
+            // 
+            this.walletDataGridViewTextBoxColumn.DataPropertyName = "Wallet";
+            this.walletDataGridViewTextBoxColumn.HeaderText = "Wallet";
+            this.walletDataGridViewTextBoxColumn.Name = "walletDataGridViewTextBoxColumn";
+            this.walletDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // activityContentDataGridViewTextBoxColumn
+            // 
+            this.activityContentDataGridViewTextBoxColumn.DataPropertyName = "Activity_Content";
+            this.activityContentDataGridViewTextBoxColumn.HeaderText = "Activity_Content";
+            this.activityContentDataGridViewTextBoxColumn.Name = "activityContentDataGridViewTextBoxColumn";
+            this.activityContentDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // activityTypeDataGridViewTextBoxColumn
+            // 
+            this.activityTypeDataGridViewTextBoxColumn.DataPropertyName = "Activity_Type";
+            this.activityTypeDataGridViewTextBoxColumn.HeaderText = "Activity_Type";
+            this.activityTypeDataGridViewTextBoxColumn.Name = "activityTypeDataGridViewTextBoxColumn";
+            this.activityTypeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // activityStatusDataGridViewTextBoxColumn
+            // 
+            this.activityStatusDataGridViewTextBoxColumn.DataPropertyName = "Activity_Status";
+            this.activityStatusDataGridViewTextBoxColumn.HeaderText = "Activity_Status";
+            this.activityStatusDataGridViewTextBoxColumn.Name = "activityStatusDataGridViewTextBoxColumn";
+            this.activityStatusDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // amountDataGridViewTextBoxColumn
+            // 
+            this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
+            this.amountDataGridViewTextBoxColumn.HeaderText = "Amount";
+            this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
+            this.amountDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // vActivityBindingSource1
+            // 
+            this.vActivityBindingSource1.DataMember = "v_Activity";
+            this.vActivityBindingSource1.DataSource = this.financeManagement;
+            // 
+            // createDateDataGridViewTextBoxColumn1
+            // 
+            this.createDateDataGridViewTextBoxColumn1.DataPropertyName = "Create_Date";
+            this.createDateDataGridViewTextBoxColumn1.HeaderText = "Create_Date";
+            this.createDateDataGridViewTextBoxColumn1.Name = "createDateDataGridViewTextBoxColumn1";
+            // 
+            // categoryIDDataGridViewTextBoxColumn1
+            // 
+            this.categoryIDDataGridViewTextBoxColumn1.DataPropertyName = "Category_ID";
+            this.categoryIDDataGridViewTextBoxColumn1.HeaderText = "Category_ID";
+            this.categoryIDDataGridViewTextBoxColumn1.Name = "categoryIDDataGridViewTextBoxColumn1";
+            // 
+            // categoryNameDataGridViewTextBoxColumn1
+            // 
+            this.categoryNameDataGridViewTextBoxColumn1.DataPropertyName = "Category_Name";
+            this.categoryNameDataGridViewTextBoxColumn1.HeaderText = "Category_Name";
+            this.categoryNameDataGridViewTextBoxColumn1.Name = "categoryNameDataGridViewTextBoxColumn1";
+            // 
+            // itemIDDataGridViewTextBoxColumn1
+            // 
+            this.itemIDDataGridViewTextBoxColumn1.DataPropertyName = "Item_ID";
+            this.itemIDDataGridViewTextBoxColumn1.HeaderText = "Item_ID";
+            this.itemIDDataGridViewTextBoxColumn1.Name = "itemIDDataGridViewTextBoxColumn1";
+            // 
+            // itemNameDataGridViewTextBoxColumn1
+            // 
+            this.itemNameDataGridViewTextBoxColumn1.DataPropertyName = "Item_Name";
+            this.itemNameDataGridViewTextBoxColumn1.HeaderText = "Item_Name";
+            this.itemNameDataGridViewTextBoxColumn1.Name = "itemNameDataGridViewTextBoxColumn1";
+            // 
+            // walletDestIDDataGridViewTextBoxColumn1
+            // 
+            this.walletDestIDDataGridViewTextBoxColumn1.DataPropertyName = "WalletDestID";
+            this.walletDestIDDataGridViewTextBoxColumn1.HeaderText = "WalletDestID";
+            this.walletDestIDDataGridViewTextBoxColumn1.Name = "walletDestIDDataGridViewTextBoxColumn1";
+            // 
+            // walletDestNameDataGridViewTextBoxColumn1
+            // 
+            this.walletDestNameDataGridViewTextBoxColumn1.DataPropertyName = "WalletDestName";
+            this.walletDestNameDataGridViewTextBoxColumn1.HeaderText = "WalletDestName";
+            this.walletDestNameDataGridViewTextBoxColumn1.Name = "walletDestNameDataGridViewTextBoxColumn1";
+            // 
+            // walletDataGridViewTextBoxColumn1
+            // 
+            this.walletDataGridViewTextBoxColumn1.DataPropertyName = "Wallet";
+            this.walletDataGridViewTextBoxColumn1.HeaderText = "Wallet";
+            this.walletDataGridViewTextBoxColumn1.Name = "walletDataGridViewTextBoxColumn1";
+            // 
+            // activityContentDataGridViewTextBoxColumn1
+            // 
+            this.activityContentDataGridViewTextBoxColumn1.DataPropertyName = "Activity_Content";
+            this.activityContentDataGridViewTextBoxColumn1.HeaderText = "Activity_Content";
+            this.activityContentDataGridViewTextBoxColumn1.Name = "activityContentDataGridViewTextBoxColumn1";
+            // 
+            // activityTypeDataGridViewTextBoxColumn1
+            // 
+            this.activityTypeDataGridViewTextBoxColumn1.DataPropertyName = "Activity_Type";
+            this.activityTypeDataGridViewTextBoxColumn1.HeaderText = "Activity_Type";
+            this.activityTypeDataGridViewTextBoxColumn1.Name = "activityTypeDataGridViewTextBoxColumn1";
+            // 
+            // activityStatusDataGridViewTextBoxColumn1
+            // 
+            this.activityStatusDataGridViewTextBoxColumn1.DataPropertyName = "Activity_Status";
+            this.activityStatusDataGridViewTextBoxColumn1.HeaderText = "Activity_Status";
+            this.activityStatusDataGridViewTextBoxColumn1.Name = "activityStatusDataGridViewTextBoxColumn1";
+            // 
+            // amountDataGridViewTextBoxColumn1
+            // 
+            this.amountDataGridViewTextBoxColumn1.DataPropertyName = "Amount";
+            this.amountDataGridViewTextBoxColumn1.HeaderText = "Amount";
+            this.amountDataGridViewTextBoxColumn1.Name = "amountDataGridViewTextBoxColumn1";
+            // 
             // frmWalletManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -852,6 +1092,9 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.financeManagement)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vActivityBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vActivityBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -919,5 +1162,33 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private DataSet.FinanceManagementTableAdapters.M_WalletTableAdapter m_WalletTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn createDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn itemIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn itemNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn walletDestIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn walletDestNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn walletDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn activityContentDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn activityTypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn activityStatusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource vActivityBindingSource;
+        private DataSet.FinanceManagement financeManagement;
+        private DataSet.FinanceManagementTableAdapters.v_ActivityTableAdapter v_ActivityTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn createDateDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryNameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn itemIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn itemNameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn walletDestIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn walletDestNameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn walletDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn activityContentDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn activityTypeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn activityStatusDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.BindingSource vActivityBindingSource1;
     }
 }

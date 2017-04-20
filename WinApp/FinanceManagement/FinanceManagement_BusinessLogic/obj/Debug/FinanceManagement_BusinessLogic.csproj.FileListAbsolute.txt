@@ -1,0 +1,6 @@
+C:\JunF's Drive\GitHub\FinanceManagement\WinApp\FinanceManagement\FinanceManagement_BusinessLogic\bin\Debug\FinanceManagement_BusinessLogic.dll.config
+C:\JunF's Drive\GitHub\FinanceManagement\WinApp\FinanceManagement\FinanceManagement_BusinessLogic\bin\Debug\FinanceManagement_BusinessLogic.dll
+C:\JunF's Drive\GitHub\FinanceManagement\WinApp\FinanceManagement\FinanceManagement_BusinessLogic\bin\Debug\FinanceManagement_BusinessLogic.pdb
+C:\JunF's Drive\GitHub\FinanceManagement\WinApp\FinanceManagement\FinanceManagement_BusinessLogic\obj\Debug\FinanceManagement_BusinessLogic.dll
+C:\JunF's Drive\GitHub\FinanceManagement\WinApp\FinanceManagement\FinanceManagement_BusinessLogic\obj\Debug\FinanceManagement_BusinessLogic.pdb
+C:\JunF's Drive\GitHub\FinanceManagement\WinApp\FinanceManagement\FinanceManagement_BusinessLogic\obj\Debug\FinanceManagement_BusinessLogic.csprojResolveAssemblyReference.cache

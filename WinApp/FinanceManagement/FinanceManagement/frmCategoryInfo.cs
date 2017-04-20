@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinanceManagement.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,7 +40,7 @@ namespace FinanceManagement
         {
             if(SelectedCategory==null)
             {
-                m_CategoryTableAdapter1.Category_Insert(txtCategoryName.Text, txtDescription.Text);
+                m_CategoryTableAdapter1.Category_Insert(txtCategoryName.Text, txtDescription.Text,AppContext.GetInstance().UserInfo.Username);
             }
             else
             {

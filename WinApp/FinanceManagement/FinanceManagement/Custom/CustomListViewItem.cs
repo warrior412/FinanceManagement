@@ -82,8 +82,11 @@ namespace FinanceManagement.Custom
 
         private void btnActivity_Click(object sender, EventArgs e)
         {
-            frmActivityManagement frm = new frmActivityManagement();
-            frm.ShowDialog();
+            frmActivityManagement frm = new frmActivityManagement(itemData);
+            if(frm.ShowDialog()==DialogResult.OK)
+            {
+
+            }
         }
 
 

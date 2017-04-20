@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinanceManagement.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,7 +27,7 @@ namespace FinanceManagement
             mCategoryBindingSource.CurrentItemChanged += mCategoryBindingSource_CurrentItemChanged;
             mItemBindingSource.CurrentItemChanged += mItemBindingSource_CurrentItemChanged;
 
-            mCategoryBindingSource.DataSource = m_CategoryTableAdapter1.Category_GetAll();
+            mCategoryBindingSource.DataSource = m_CategoryTableAdapter1.Category_GetAll(AppContext.GetInstance().UserInfo.Username);
             dvCategory.DataSource = mCategoryBindingSource;
         }
 

@@ -18,6 +18,15 @@ namespace FinanceManagement
         {
             InitializeComponent();
             GetListWallet();
+            GetActivityData();
+        }
+
+        private void GetActivityData()
+        {
+            vActivityBindingSource.DataSource = v_ActivityTableAdapter1.v_Activity_GetAllDeposit();
+            vActivityBindingSource1.DataSource = v_ActivityTableAdapter1.v_Activity_GetAllWithDraw();
+            dgvDeposit.DataSource = vActivityBindingSource;
+            dgvWithDraw.DataSource = vActivityBindingSource1;
         }
 
         private void GetListWallet()
