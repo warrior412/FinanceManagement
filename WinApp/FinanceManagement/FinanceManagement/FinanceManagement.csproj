@@ -64,6 +64,30 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FinanceManagement.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmActivityManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActivityManagement.Designer.cs">
+      <DependentUpon>frmActivityManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategoryInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategoryInfo.Designer.cs">
+      <DependentUpon>frmCategoryInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItemInfo.Designer.cs">
+      <DependentUpon>frmItemInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmItemManagement.Designer.cs">
+      <DependentUpon>frmItemManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +119,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom\CustomTitlePanel.resx">
       <DependentUpon>CustomTitlePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActivityManagement.resx">
+      <DependentUpon>frmActivityManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCategoryInfo.resx">
+      <DependentUpon>frmCategoryInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItemInfo.resx">
+      <DependentUpon>frmItemInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmItemManagement.resx">
+      <DependentUpon>frmItemManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

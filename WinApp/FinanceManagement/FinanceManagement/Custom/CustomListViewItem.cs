@@ -14,6 +14,7 @@ namespace FinanceManagement.Custom
     public partial class CustomListViewItem : UserControl
     {
         public event EventHandler OnItemClick;
+        public event EventHandler OnReloadListView;
 
         private string walletID;
 
@@ -33,6 +34,7 @@ namespace FinanceManagement.Custom
                 lblName.Text = walletName;
             }
         }
+
         private double totalAmount;
 
         public double TotalAmount
@@ -43,6 +45,14 @@ namespace FinanceManagement.Custom
                 lblAmount.Text = AppContext.GetInstance().getMoneyFormatByDouble(totalAmount);
             }
         }
+
+        private FinanceManagement.DataSet.FinanceManagement.M_WalletRow itemData;
+
+        public FinanceManagement.DataSet.FinanceManagement.M_WalletRow ItemData
+        {
+            get { return itemData; }
+            set { itemData = value; }
+        }
         public CustomListViewItem()
         {
             InitializeComponent();
@@ -52,6 +62,28 @@ namespace FinanceManagement.Custom
         {
             if (OnItemClick != null)
                 OnItemClick(this, e);
+        }
+
+        private void tableLayoutPanel2_Click(object sender, EventArgs e)
+        {
+            if (OnItemClick != null)
+                OnItemClick(this, e);
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            frmWalletInfo frm = new frmWalletInfo(itemData);
+            if(frm.ShowDialog()==DialogResult.OK)
+            {
+                if (OnReloadListView != null)
+                    OnReloadListView(this, e);
+            }
+        }
+
+        private void btnActivity_Click(object sender, EventArgs e)
+        {
+            frmActivityManagement frm = new frmActivityManagement();
+            frm.ShowDialog();
         }
 
 

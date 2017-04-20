@@ -34,8 +34,8 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblAmount = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnActivity = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -91,6 +91,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(202, 104);
             this.tableLayoutPanel2.TabIndex = 1;
+            this.tableLayoutPanel2.Click += new System.EventHandler(this.tableLayoutPanel2_Click);
             // 
             // lblName
             // 
@@ -115,33 +116,35 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnActivity);
+            this.panel1.Controls.Add(this.btnEdit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 74);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(196, 27);
             this.panel1.TabIndex = 2;
             // 
-            // button2
+            // btnActivity
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button2.Location = new System.Drawing.Point(30, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 27);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Xóa";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnActivity.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnActivity.Location = new System.Drawing.Point(30, 0);
+            this.btnActivity.Name = "btnActivity";
+            this.btnActivity.Size = new System.Drawing.Size(84, 27);
+            this.btnActivity.TabIndex = 1;
+            this.btnActivity.Text = "Nhập thu chi";
+            this.btnActivity.UseVisualStyleBackColor = true;
+            this.btnActivity.Click += new System.EventHandler(this.btnActivity_Click);
             // 
-            // button1
+            // btnEdit
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Location = new System.Drawing.Point(114, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 27);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Chi tiết";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnEdit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnEdit.Location = new System.Drawing.Point(114, 0);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(82, 27);
+            this.btnEdit.TabIndex = 0;
+            this.btnEdit.Text = "Chỉnh sửa";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // CustomListViewItem
             // 
@@ -168,7 +171,7 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblAmount;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnActivity;
+        private System.Windows.Forms.Button btnEdit;
     }
 }

@@ -31,7 +31,7 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnWalletManagement = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnActivity = new System.Windows.Forms.ToolStripButton();
+            this.btnItemManagement = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -41,7 +41,7 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnWalletManagement,
             this.toolStripSeparator1,
-            this.btnActivity,
+            this.btnItemManagement,
             this.toolStripSeparator2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -67,18 +67,19 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 90);
             // 
-            // btnActivity
+            // btnItemManagement
             // 
-            this.btnActivity.AutoSize = false;
-            this.btnActivity.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btnActivity.Image = global::FinanceManagement.Properties.Resources.dollar_folder_icon;
-            this.btnActivity.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnActivity.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnActivity.Name = "btnActivity";
-            this.btnActivity.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnActivity.Size = new System.Drawing.Size(100, 87);
-            this.btnActivity.Text = "HOẠT ĐỘNG";
-            this.btnActivity.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnItemManagement.AutoSize = false;
+            this.btnItemManagement.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnItemManagement.Image = global::FinanceManagement.Properties.Resources.dollar_folder_icon;
+            this.btnItemManagement.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnItemManagement.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnItemManagement.Name = "btnItemManagement";
+            this.btnItemManagement.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnItemManagement.Size = new System.Drawing.Size(100, 87);
+            this.btnItemManagement.Text = "MỤC CHI TIÊU";
+            this.btnItemManagement.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnItemManagement.Click += new System.EventHandler(this.btnItemManagement_Click);
             // 
             // toolStripSeparator2
             // 
@@ -107,7 +108,7 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnWalletManagement;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton btnActivity;
+        private System.Windows.Forms.ToolStripButton btnItemManagement;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
     }
 }

@@ -57,5 +57,14 @@ namespace FinanceManagement
             this.txtPass.Text = "";
             this.Show();
         }
+
+
+        private void txtPass_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnLogin_Click(sender, e);
+            }
+        }
     }
 }

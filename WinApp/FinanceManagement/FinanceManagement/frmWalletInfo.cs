@@ -13,6 +13,42 @@ namespace FinanceManagement
 {
     public partial class frmWalletInfo : Form
     {
+        private FinanceManagement.DataSet.FinanceManagement.M_WalletRow itemData;
+
+        public FinanceManagement.DataSet.FinanceManagement.M_WalletRow ItemData
+        {
+            get { return itemData; }
+            set { 
+                itemData = value;
+                if (itemData==null)
+                {
+                    lblCreateDate.Text = DateTime.Now.ToShortDateString();
+                    lblStatus.Text = "Tạo mới";
+                    lblUser.Text = AppContext.GetInstance().UserInfo.Fullname;
+                }
+                else
+                {
+                    txtContent.Text = itemData.Wallet_Content;
+                    txtDescription.Text = itemData.Wallet_Description;
+                    lblCreateDate.Text = itemData.Create_Date.ToShortDateString();
+                    lblUser.Text = AppContext.GetInstance().UserInfo.Fullname;
+
+                    switch(itemData.Wallet_Status)
+                    {
+                        case (int)WalletStatus.Delete:
+                            lblStatus.Text = "Đã xóa";
+                            break;
+                        case (int)WalletStatus.Active:
+                            lblStatus.Text = "Đang hoạt động";
+                            break;
+                        case (int)WalletStatus.Finish:
+                            lblStatus.Text = "Đã hoàn thành";
+                            break;
+                    }
+                }
+            }
+        }
+
         private bool isInsert;
 
         public bool IsInsert
@@ -20,30 +56,21 @@ namespace FinanceManagement
             get { return isInsert; }
             set { 
                 isInsert = value;
-                if(isInsert)
-                {
-                    lblCreateDate.Text = DateTime.Now.ToShortDateString();
-                    lblStatus.Text = "Tạo mới";
-                    lblUser.Text = AppContext.GetInstance().UserInfo.Fullname;
-                }else
-                {
-
-                }
+                
                 
             }
         }
-        public frmWalletInfo(bool mode)
+        public frmWalletInfo(FinanceManagement.DataSet.FinanceManagement.M_WalletRow itemData)
         {
             InitializeComponent();
-            IsInsert = mode;
-            
+            ItemData = itemData;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (!validate())
                 return;
-            if(IsInsert)
+            if(itemData==null)
             {
                 try
                 {
@@ -52,6 +79,17 @@ namespace FinanceManagement
                 }catch(Exception ex)
                 {
                     MessageBox.Show("Lưu thất bại ! Vui lòng liên hệ người quản trị.",ex.Message);
+                }
+            }else
+            {
+                try
+                {
+                    m_WalletTableAdapter1.Wallet_Update(txtContent.Text, txtDescription.Text,itemData.Wallet_Status,itemData.Wallet_ID);
+                    DialogResult = System.Windows.Forms.DialogResult.OK;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lưu thất bại ! Vui lòng liên hệ người quản trị.", ex.Message);
                 }
             }
         }

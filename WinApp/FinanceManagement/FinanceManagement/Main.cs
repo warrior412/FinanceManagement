@@ -24,5 +24,12 @@ namespace FinanceManagement
             frm.Dock = DockStyle.Fill;
             frm.Show();
         }
+
+        private void btnItemManagement_Click(object sender, EventArgs e)
+        {
+            frmItemManagement frm = new frmItemManagement();
+            frm.StartPosition = FormStartPosition.CenterScreen;
+            frm.ShowDialog();
+        }
     }
 }

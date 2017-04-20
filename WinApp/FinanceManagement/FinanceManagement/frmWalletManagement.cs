@@ -27,8 +27,10 @@ namespace FinanceManagement
                 DataSet.FinanceManagement.M_WalletDataTable rs = 
                     m_WalletTableAdapter1.Wallet_GetAll(AppContext.GetInstance().UserInfo.Username);
 
-                lvWallet.RowStyles.Clear();
+                lvWallet.RowCount = 1;
                 lvWallet.Controls.Clear();
+                lvWallet.RowStyles.Clear();
+
                 int index = 0;
                 foreach(var row in rs)
                 {
@@ -37,8 +39,12 @@ namespace FinanceManagement
                     item.WalletID = row.Wallet_ID.ToString();
                     item.WalletName = row.Wallet_Content;
                     item.TotalAmount = row.Wallet_Balance;
+
                     item.OnItemClick += item_OnItemClick;
+                    item.OnReloadListView += item_OnReloadListView;
+
                     item.Dock = DockStyle.Fill;
+                    item.ItemData = row;
                     lvWallet.Controls.Add(item, 0, index++);
                 }  
                 lvWallet.Refresh();
@@ -46,6 +52,11 @@ namespace FinanceManagement
             {
                 MessageBox.Show("Đã có lỗi xảy ra! Vui lòng liên hệ người quản trị.", ex.Message);
             }
+        }
+
+        void item_OnReloadListView(object sender, EventArgs e)
+        {
+            GetListWallet();
         }
 
         void item_OnItemClick(object sender, EventArgs e)
@@ -70,7 +81,7 @@ namespace FinanceManagement
 
         private void btnAddNewWallet_Click(object sender, EventArgs e)
         {
-            frmWalletInfo dialog = new frmWalletInfo(true);
+            frmWalletInfo dialog = new frmWalletInfo(null);
             if(dialog.ShowDialog()==DialogResult.OK)
             {
                 GetListWallet();

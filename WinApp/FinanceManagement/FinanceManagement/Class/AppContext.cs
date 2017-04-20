@@ -63,4 +63,11 @@ namespace FinanceManagement.Class
             set { role = value; }
         }
     }
+
+    public enum WalletStatus
+    {
+        Delete = -1,
+        Active = 1,
+        Finish = 0
+    }
 }
