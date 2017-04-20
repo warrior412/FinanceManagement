@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,7 +17,19 @@ namespace FinanceManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+
+            Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
+
+            Application.ThreadException += delegate(object sender, ThreadExceptionEventArgs e)
+            {
+                Program.DoError(e.Exception);
+            };
+
+            Application.Run(new frmLogin());
+        }
+        private static void DoError(object exceptionValue)
+        {
+            MessageBox.Show(exceptionValue.ToString());
         }
     }
 }

@@ -24,7 +24,9 @@ namespace FinanceManagement.DataSet {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class FinanceManagement : global::System.Data.DataSet {
         
-        private Wallet_GetAllDataTable tableWallet_GetAll;
+        private M_WalletDataTable tableM_Wallet;
+        
+        private M_UserDataTable tableM_User;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +56,11 @@ namespace FinanceManagement.DataSet {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Wallet_GetAll"] != null)) {
-                    base.Tables.Add(new Wallet_GetAllDataTable(ds.Tables["Wallet_GetAll"]));
+                if ((ds.Tables["M_Wallet"] != null)) {
+                    base.Tables.Add(new M_WalletDataTable(ds.Tables["M_Wallet"]));
+                }
+                if ((ds.Tables["M_User"] != null)) {
+                    base.Tables.Add(new M_UserDataTable(ds.Tables["M_User"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +84,19 @@ namespace FinanceManagement.DataSet {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public Wallet_GetAllDataTable Wallet_GetAll {
+        public M_WalletDataTable M_Wallet {
             get {
-                return this.tableWallet_GetAll;
+                return this.tableM_Wallet;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public M_UserDataTable M_User {
+            get {
+                return this.tableM_User;
             }
         }
         
@@ -152,8 +167,11 @@ namespace FinanceManagement.DataSet {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Wallet_GetAll"] != null)) {
-                    base.Tables.Add(new Wallet_GetAllDataTable(ds.Tables["Wallet_GetAll"]));
+                if ((ds.Tables["M_Wallet"] != null)) {
+                    base.Tables.Add(new M_WalletDataTable(ds.Tables["M_Wallet"]));
+                }
+                if ((ds.Tables["M_User"] != null)) {
+                    base.Tables.Add(new M_UserDataTable(ds.Tables["M_User"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +206,16 @@ namespace FinanceManagement.DataSet {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableWallet_GetAll = ((Wallet_GetAllDataTable)(base.Tables["Wallet_GetAll"]));
+            this.tableM_Wallet = ((M_WalletDataTable)(base.Tables["M_Wallet"]));
             if ((initTable == true)) {
-                if ((this.tableWallet_GetAll != null)) {
-                    this.tableWallet_GetAll.InitVars();
+                if ((this.tableM_Wallet != null)) {
+                    this.tableM_Wallet.InitVars();
+                }
+            }
+            this.tableM_User = ((M_UserDataTable)(base.Tables["M_User"]));
+            if ((initTable == true)) {
+                if ((this.tableM_User != null)) {
+                    this.tableM_User.InitVars();
                 }
             }
         }
@@ -204,13 +228,21 @@ namespace FinanceManagement.DataSet {
             this.Namespace = "http://tempuri.org/FinanceManagement.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableWallet_GetAll = new Wallet_GetAllDataTable();
-            base.Tables.Add(this.tableWallet_GetAll);
+            this.tableM_Wallet = new M_WalletDataTable();
+            base.Tables.Add(this.tableM_Wallet);
+            this.tableM_User = new M_UserDataTable();
+            base.Tables.Add(this.tableM_User);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeWallet_GetAll() {
+        private bool ShouldSerializeM_Wallet() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeM_User() {
             return false;
         }
         
@@ -270,14 +302,17 @@ namespace FinanceManagement.DataSet {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void Wallet_GetAllRowChangeEventHandler(object sender, Wallet_GetAllRowChangeEvent e);
+        public delegate void M_WalletRowChangeEventHandler(object sender, M_WalletRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void M_UserRowChangeEventHandler(object sender, M_UserRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class Wallet_GetAllDataTable : global::System.Data.TypedTableBase<Wallet_GetAllRow> {
+        public partial class M_WalletDataTable : global::System.Data.TypedTableBase<M_WalletRow> {
             
             private global::System.Data.DataColumn columnWallet_ID;
             
@@ -291,10 +326,12 @@ namespace FinanceManagement.DataSet {
             
             private global::System.Data.DataColumn columnWallet_Status;
             
+            private global::System.Data.DataColumn columnUser;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Wallet_GetAllDataTable() {
-                this.TableName = "Wallet_GetAll";
+            public M_WalletDataTable() {
+                this.TableName = "M_Wallet";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -302,7 +339,7 @@ namespace FinanceManagement.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal Wallet_GetAllDataTable(global::System.Data.DataTable table) {
+            internal M_WalletDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -319,7 +356,7 @@ namespace FinanceManagement.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected Wallet_GetAllDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected M_WalletDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -374,6 +411,14 @@ namespace FinanceManagement.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn UserColumn {
+                get {
+                    return this.columnUser;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -383,57 +428,58 @@ namespace FinanceManagement.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Wallet_GetAllRow this[int index] {
+            public M_WalletRow this[int index] {
                 get {
-                    return ((Wallet_GetAllRow)(this.Rows[index]));
+                    return ((M_WalletRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event Wallet_GetAllRowChangeEventHandler Wallet_GetAllRowChanging;
+            public event M_WalletRowChangeEventHandler M_WalletRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event Wallet_GetAllRowChangeEventHandler Wallet_GetAllRowChanged;
+            public event M_WalletRowChangeEventHandler M_WalletRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event Wallet_GetAllRowChangeEventHandler Wallet_GetAllRowDeleting;
+            public event M_WalletRowChangeEventHandler M_WalletRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event Wallet_GetAllRowChangeEventHandler Wallet_GetAllRowDeleted;
+            public event M_WalletRowChangeEventHandler M_WalletRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddWallet_GetAllRow(Wallet_GetAllRow row) {
+            public void AddM_WalletRow(M_WalletRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Wallet_GetAllRow AddWallet_GetAllRow(string Wallet_Content, string Wallet_Description, double Wallet_Balance, System.DateTime Create_Date, int Wallet_Status) {
-                Wallet_GetAllRow rowWallet_GetAllRow = ((Wallet_GetAllRow)(this.NewRow()));
+            public M_WalletRow AddM_WalletRow(string Wallet_Content, string Wallet_Description, double Wallet_Balance, System.DateTime Create_Date, int Wallet_Status, string User) {
+                M_WalletRow rowM_WalletRow = ((M_WalletRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         Wallet_Content,
                         Wallet_Description,
                         Wallet_Balance,
                         Create_Date,
-                        Wallet_Status};
-                rowWallet_GetAllRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowWallet_GetAllRow);
-                return rowWallet_GetAllRow;
+                        Wallet_Status,
+                        User};
+                rowM_WalletRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowM_WalletRow);
+                return rowM_WalletRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Wallet_GetAllRow FindByWallet_ID(int Wallet_ID) {
-                return ((Wallet_GetAllRow)(this.Rows.Find(new object[] {
+            public M_WalletRow FindByWallet_ID(int Wallet_ID) {
+                return ((M_WalletRow)(this.Rows.Find(new object[] {
                             Wallet_ID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                Wallet_GetAllDataTable cln = ((Wallet_GetAllDataTable)(base.Clone()));
+                M_WalletDataTable cln = ((M_WalletDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -441,7 +487,7 @@ namespace FinanceManagement.DataSet {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new Wallet_GetAllDataTable();
+                return new M_WalletDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -453,6 +499,7 @@ namespace FinanceManagement.DataSet {
                 this.columnWallet_Balance = base.Columns["Wallet_Balance"];
                 this.columnCreate_Date = base.Columns["Create_Date"];
                 this.columnWallet_Status = base.Columns["Wallet_Status"];
+                this.columnUser = base.Columns["User"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -470,6 +517,8 @@ namespace FinanceManagement.DataSet {
                 base.Columns.Add(this.columnCreate_Date);
                 this.columnWallet_Status = new global::System.Data.DataColumn("Wallet_Status", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnWallet_Status);
+                this.columnUser = new global::System.Data.DataColumn("User", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUser);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnWallet_ID}, true));
                 this.columnWallet_ID.AutoIncrement = true;
@@ -480,32 +529,34 @@ namespace FinanceManagement.DataSet {
                 this.columnWallet_ID.Unique = true;
                 this.columnWallet_Content.MaxLength = 200;
                 this.columnWallet_Description.MaxLength = 300;
+                this.columnUser.AllowDBNull = false;
+                this.columnUser.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Wallet_GetAllRow NewWallet_GetAllRow() {
-                return ((Wallet_GetAllRow)(this.NewRow()));
+            public M_WalletRow NewM_WalletRow() {
+                return ((M_WalletRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new Wallet_GetAllRow(builder);
+                return new M_WalletRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(Wallet_GetAllRow);
+                return typeof(M_WalletRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.Wallet_GetAllRowChanged != null)) {
-                    this.Wallet_GetAllRowChanged(this, new Wallet_GetAllRowChangeEvent(((Wallet_GetAllRow)(e.Row)), e.Action));
+                if ((this.M_WalletRowChanged != null)) {
+                    this.M_WalletRowChanged(this, new M_WalletRowChangeEvent(((M_WalletRow)(e.Row)), e.Action));
                 }
             }
             
@@ -513,8 +564,8 @@ namespace FinanceManagement.DataSet {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.Wallet_GetAllRowChanging != null)) {
-                    this.Wallet_GetAllRowChanging(this, new Wallet_GetAllRowChangeEvent(((Wallet_GetAllRow)(e.Row)), e.Action));
+                if ((this.M_WalletRowChanging != null)) {
+                    this.M_WalletRowChanging(this, new M_WalletRowChangeEvent(((M_WalletRow)(e.Row)), e.Action));
                 }
             }
             
@@ -522,8 +573,8 @@ namespace FinanceManagement.DataSet {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.Wallet_GetAllRowDeleted != null)) {
-                    this.Wallet_GetAllRowDeleted(this, new Wallet_GetAllRowChangeEvent(((Wallet_GetAllRow)(e.Row)), e.Action));
+                if ((this.M_WalletRowDeleted != null)) {
+                    this.M_WalletRowDeleted(this, new M_WalletRowChangeEvent(((M_WalletRow)(e.Row)), e.Action));
                 }
             }
             
@@ -531,14 +582,14 @@ namespace FinanceManagement.DataSet {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.Wallet_GetAllRowDeleting != null)) {
-                    this.Wallet_GetAllRowDeleting(this, new Wallet_GetAllRowChangeEvent(((Wallet_GetAllRow)(e.Row)), e.Action));
+                if ((this.M_WalletRowDeleting != null)) {
+                    this.M_WalletRowDeleting(this, new M_WalletRowChangeEvent(((M_WalletRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveWallet_GetAllRow(Wallet_GetAllRow row) {
+            public void RemoveM_WalletRow(M_WalletRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -565,7 +616,310 @@ namespace FinanceManagement.DataSet {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "Wallet_GetAllDataTable";
+                attribute2.FixedValue = "M_WalletDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class M_UserDataTable : global::System.Data.TypedTableBase<M_UserRow> {
+            
+            private global::System.Data.DataColumn columnUserName;
+            
+            private global::System.Data.DataColumn columnPassword;
+            
+            private global::System.Data.DataColumn columnRole;
+            
+            private global::System.Data.DataColumn columnFullName;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public M_UserDataTable() {
+                this.TableName = "M_User";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal M_UserDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected M_UserDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn UserNameColumn {
+                get {
+                    return this.columnUserName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PasswordColumn {
+                get {
+                    return this.columnPassword;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RoleColumn {
+                get {
+                    return this.columnRole;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn FullNameColumn {
+                get {
+                    return this.columnFullName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public M_UserRow this[int index] {
+                get {
+                    return ((M_UserRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event M_UserRowChangeEventHandler M_UserRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event M_UserRowChangeEventHandler M_UserRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event M_UserRowChangeEventHandler M_UserRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event M_UserRowChangeEventHandler M_UserRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddM_UserRow(M_UserRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public M_UserRow AddM_UserRow(string UserName, string Password, int Role, string FullName) {
+                M_UserRow rowM_UserRow = ((M_UserRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        UserName,
+                        Password,
+                        Role,
+                        FullName};
+                rowM_UserRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowM_UserRow);
+                return rowM_UserRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public M_UserRow FindByUserName(string UserName) {
+                return ((M_UserRow)(this.Rows.Find(new object[] {
+                            UserName})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                M_UserDataTable cln = ((M_UserDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new M_UserDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnUserName = base.Columns["UserName"];
+                this.columnPassword = base.Columns["Password"];
+                this.columnRole = base.Columns["Role"];
+                this.columnFullName = base.Columns["FullName"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnUserName = new global::System.Data.DataColumn("UserName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUserName);
+                this.columnPassword = new global::System.Data.DataColumn("Password", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPassword);
+                this.columnRole = new global::System.Data.DataColumn("Role", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRole);
+                this.columnFullName = new global::System.Data.DataColumn("FullName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFullName);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnUserName}, true));
+                this.columnUserName.AllowDBNull = false;
+                this.columnUserName.Unique = true;
+                this.columnUserName.MaxLength = 50;
+                this.columnPassword.MaxLength = 2147483647;
+                this.columnFullName.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public M_UserRow NewM_UserRow() {
+                return ((M_UserRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new M_UserRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(M_UserRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.M_UserRowChanged != null)) {
+                    this.M_UserRowChanged(this, new M_UserRowChangeEvent(((M_UserRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.M_UserRowChanging != null)) {
+                    this.M_UserRowChanging(this, new M_UserRowChangeEvent(((M_UserRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.M_UserRowDeleted != null)) {
+                    this.M_UserRowDeleted(this, new M_UserRowChangeEvent(((M_UserRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.M_UserRowDeleting != null)) {
+                    this.M_UserRowDeleting(this, new M_UserRowChangeEvent(((M_UserRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveM_UserRow(M_UserRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                FinanceManagement ds = new FinanceManagement();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "M_UserDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -609,25 +963,25 @@ namespace FinanceManagement.DataSet {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class Wallet_GetAllRow : global::System.Data.DataRow {
+        public partial class M_WalletRow : global::System.Data.DataRow {
             
-            private Wallet_GetAllDataTable tableWallet_GetAll;
+            private M_WalletDataTable tableM_Wallet;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal Wallet_GetAllRow(global::System.Data.DataRowBuilder rb) : 
+            internal M_WalletRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableWallet_GetAll = ((Wallet_GetAllDataTable)(this.Table));
+                this.tableM_Wallet = ((M_WalletDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int Wallet_ID {
                 get {
-                    return ((int)(this[this.tableWallet_GetAll.Wallet_IDColumn]));
+                    return ((int)(this[this.tableM_Wallet.Wallet_IDColumn]));
                 }
                 set {
-                    this[this.tableWallet_GetAll.Wallet_IDColumn] = value;
+                    this[this.tableM_Wallet.Wallet_IDColumn] = value;
                 }
             }
             
@@ -636,14 +990,14 @@ namespace FinanceManagement.DataSet {
             public string Wallet_Content {
                 get {
                     try {
-                        return ((string)(this[this.tableWallet_GetAll.Wallet_ContentColumn]));
+                        return ((string)(this[this.tableM_Wallet.Wallet_ContentColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Wallet_Content\' in table \'Wallet_GetAll\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Wallet_Content\' in table \'M_Wallet\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableWallet_GetAll.Wallet_ContentColumn] = value;
+                    this[this.tableM_Wallet.Wallet_ContentColumn] = value;
                 }
             }
             
@@ -652,14 +1006,14 @@ namespace FinanceManagement.DataSet {
             public string Wallet_Description {
                 get {
                     try {
-                        return ((string)(this[this.tableWallet_GetAll.Wallet_DescriptionColumn]));
+                        return ((string)(this[this.tableM_Wallet.Wallet_DescriptionColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Wallet_Description\' in table \'Wallet_GetAll\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Wallet_Description\' in table \'M_Wallet\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableWallet_GetAll.Wallet_DescriptionColumn] = value;
+                    this[this.tableM_Wallet.Wallet_DescriptionColumn] = value;
                 }
             }
             
@@ -668,14 +1022,14 @@ namespace FinanceManagement.DataSet {
             public double Wallet_Balance {
                 get {
                     try {
-                        return ((double)(this[this.tableWallet_GetAll.Wallet_BalanceColumn]));
+                        return ((double)(this[this.tableM_Wallet.Wallet_BalanceColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Wallet_Balance\' in table \'Wallet_GetAll\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Wallet_Balance\' in table \'M_Wallet\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableWallet_GetAll.Wallet_BalanceColumn] = value;
+                    this[this.tableM_Wallet.Wallet_BalanceColumn] = value;
                 }
             }
             
@@ -684,14 +1038,14 @@ namespace FinanceManagement.DataSet {
             public System.DateTime Create_Date {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableWallet_GetAll.Create_DateColumn]));
+                        return ((global::System.DateTime)(this[this.tableM_Wallet.Create_DateColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Create_Date\' in table \'Wallet_GetAll\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Create_Date\' in table \'M_Wallet\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableWallet_GetAll.Create_DateColumn] = value;
+                    this[this.tableM_Wallet.Create_DateColumn] = value;
                 }
             }
             
@@ -700,75 +1054,196 @@ namespace FinanceManagement.DataSet {
             public int Wallet_Status {
                 get {
                     try {
-                        return ((int)(this[this.tableWallet_GetAll.Wallet_StatusColumn]));
+                        return ((int)(this[this.tableM_Wallet.Wallet_StatusColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Wallet_Status\' in table \'Wallet_GetAll\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Wallet_Status\' in table \'M_Wallet\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableWallet_GetAll.Wallet_StatusColumn] = value;
+                    this[this.tableM_Wallet.Wallet_StatusColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string User {
+                get {
+                    return ((string)(this[this.tableM_Wallet.UserColumn]));
+                }
+                set {
+                    this[this.tableM_Wallet.UserColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsWallet_ContentNull() {
-                return this.IsNull(this.tableWallet_GetAll.Wallet_ContentColumn);
+                return this.IsNull(this.tableM_Wallet.Wallet_ContentColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetWallet_ContentNull() {
-                this[this.tableWallet_GetAll.Wallet_ContentColumn] = global::System.Convert.DBNull;
+                this[this.tableM_Wallet.Wallet_ContentColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsWallet_DescriptionNull() {
-                return this.IsNull(this.tableWallet_GetAll.Wallet_DescriptionColumn);
+                return this.IsNull(this.tableM_Wallet.Wallet_DescriptionColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetWallet_DescriptionNull() {
-                this[this.tableWallet_GetAll.Wallet_DescriptionColumn] = global::System.Convert.DBNull;
+                this[this.tableM_Wallet.Wallet_DescriptionColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsWallet_BalanceNull() {
-                return this.IsNull(this.tableWallet_GetAll.Wallet_BalanceColumn);
+                return this.IsNull(this.tableM_Wallet.Wallet_BalanceColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetWallet_BalanceNull() {
-                this[this.tableWallet_GetAll.Wallet_BalanceColumn] = global::System.Convert.DBNull;
+                this[this.tableM_Wallet.Wallet_BalanceColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsCreate_DateNull() {
-                return this.IsNull(this.tableWallet_GetAll.Create_DateColumn);
+                return this.IsNull(this.tableM_Wallet.Create_DateColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetCreate_DateNull() {
-                this[this.tableWallet_GetAll.Create_DateColumn] = global::System.Convert.DBNull;
+                this[this.tableM_Wallet.Create_DateColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsWallet_StatusNull() {
-                return this.IsNull(this.tableWallet_GetAll.Wallet_StatusColumn);
+                return this.IsNull(this.tableM_Wallet.Wallet_StatusColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetWallet_StatusNull() {
-                this[this.tableWallet_GetAll.Wallet_StatusColumn] = global::System.Convert.DBNull;
+                this[this.tableM_Wallet.Wallet_StatusColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class M_UserRow : global::System.Data.DataRow {
+            
+            private M_UserDataTable tableM_User;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal M_UserRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableM_User = ((M_UserDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string UserName {
+                get {
+                    return ((string)(this[this.tableM_User.UserNameColumn]));
+                }
+                set {
+                    this[this.tableM_User.UserNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Password {
+                get {
+                    try {
+                        return ((string)(this[this.tableM_User.PasswordColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Password\' in table \'M_User\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableM_User.PasswordColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Role {
+                get {
+                    try {
+                        return ((int)(this[this.tableM_User.RoleColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Role\' in table \'M_User\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableM_User.RoleColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string FullName {
+                get {
+                    try {
+                        return ((string)(this[this.tableM_User.FullNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FullName\' in table \'M_User\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableM_User.FullNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPasswordNull() {
+                return this.IsNull(this.tableM_User.PasswordColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPasswordNull() {
+                this[this.tableM_User.PasswordColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRoleNull() {
+                return this.IsNull(this.tableM_User.RoleColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRoleNull() {
+                this[this.tableM_User.RoleColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsFullNameNull() {
+                return this.IsNull(this.tableM_User.FullNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetFullNameNull() {
+                this[this.tableM_User.FullNameColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -776,22 +1251,56 @@ namespace FinanceManagement.DataSet {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class Wallet_GetAllRowChangeEvent : global::System.EventArgs {
+        public class M_WalletRowChangeEvent : global::System.EventArgs {
             
-            private Wallet_GetAllRow eventRow;
+            private M_WalletRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Wallet_GetAllRowChangeEvent(Wallet_GetAllRow row, global::System.Data.DataRowAction action) {
+            public M_WalletRowChangeEvent(M_WalletRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Wallet_GetAllRow Row {
+            public M_WalletRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class M_UserRowChangeEvent : global::System.EventArgs {
+            
+            private M_UserRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public M_UserRowChangeEvent(M_UserRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public M_UserRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -819,7 +1328,7 @@ namespace FinanceManagement.DataSet.FinanceManagementTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class Wallet_GetAllTableAdapter : global::System.ComponentModel.Component {
+    public partial class M_WalletTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -833,7 +1342,7 @@ namespace FinanceManagement.DataSet.FinanceManagementTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public Wallet_GetAllTableAdapter() {
+        public M_WalletTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -930,13 +1439,14 @@ namespace FinanceManagement.DataSet.FinanceManagementTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Wallet_GetAll";
+            tableMapping.DataSetTable = "M_Wallet";
             tableMapping.ColumnMappings.Add("Wallet_ID", "Wallet_ID");
             tableMapping.ColumnMappings.Add("Wallet_Content", "Wallet_Content");
             tableMapping.ColumnMappings.Add("Wallet_Description", "Wallet_Description");
             tableMapping.ColumnMappings.Add("Wallet_Balance", "Wallet_Balance");
             tableMapping.ColumnMappings.Add("Create_Date", "Create_Date");
             tableMapping.ColumnMappings.Add("Wallet_Status", "Wallet_Status");
+            tableMapping.ColumnMappings.Add("User", "User");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -955,7 +1465,8 @@ namespace FinanceManagement.DataSet.FinanceManagementTableAdapters {
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "dbo.Wallet_GetAll";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Variant, 0, global::System.Data.ParameterDirection.ReturnValue, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Username", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
             this._commandCollection[1].CommandText = "dbo.Wallet_Insert";
@@ -964,15 +1475,22 @@ namespace FinanceManagement.DataSet.FinanceManagementTableAdapters {
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Wallet_Content", global::System.Data.SqlDbType.NVarChar, 200, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Wallet_Description", global::System.Data.SqlDbType.NVarChar, 300, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Create_Date", global::System.Data.SqlDbType.DateTime, 8, global::System.Data.ParameterDirection.Input, 23, 3, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@User", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual FinanceManagement.Wallet_GetAllDataTable Wallet_GetAll() {
+        public virtual FinanceManagement.M_WalletDataTable Wallet_GetAll(string Username) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            FinanceManagement.Wallet_GetAllDataTable dataTable = new FinanceManagement.Wallet_GetAllDataTable();
+            if ((Username == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Username));
+            }
+            FinanceManagement.M_WalletDataTable dataTable = new FinanceManagement.M_WalletDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -981,7 +1499,7 @@ namespace FinanceManagement.DataSet.FinanceManagementTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int Wallet_Insert(string Wallet_Content, string Wallet_Description, global::System.Nullable<global::System.DateTime> Create_Date) {
+        public virtual object Wallet_Insert(string Wallet_Content, string Wallet_Description, global::System.Nullable<global::System.DateTime> Create_Date, string User) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
             if ((Wallet_Content == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -1001,21 +1519,221 @@ namespace FinanceManagement.DataSet.FinanceManagementTableAdapters {
             else {
                 command.Parameters[3].Value = global::System.DBNull.Value;
             }
+            if ((User == null)) {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[4].Value = ((string)(User));
+            }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
-            int returnValue;
+            object returnValue;
             try {
-                returnValue = command.ExecuteNonQuery();
+                returnValue = command.ExecuteScalar();
             }
             finally {
                 if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
                     command.Connection.Close();
                 }
             }
-            return returnValue;
+            if (((returnValue == null) 
+                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
+                return null;
+            }
+            else {
+                return ((object)(returnValue));
+            }
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class M_UserTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public M_UserTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "M_User";
+            tableMapping.ColumnMappings.Add("UserName", "UserName");
+            tableMapping.ColumnMappings.Add("Password", "Password");
+            tableMapping.ColumnMappings.Add("Role", "Role");
+            tableMapping.ColumnMappings.Add("FullName", "FullName");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::FinanceManagement.Properties.Settings.Default.FinanceManagementConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.User_GetInfo";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UserName", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.VarChar, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "dbo.User_GetAll";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual FinanceManagement.M_UserDataTable User_GetInfo(string UserName, string Password) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((UserName == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(UserName));
+            }
+            if ((Password == null)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(Password));
+            }
+            FinanceManagement.M_UserDataTable dataTable = new FinanceManagement.M_UserDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual FinanceManagement.M_UserDataTable User_GetAll() {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            FinanceManagement.M_UserDataTable dataTable = new FinanceManagement.M_UserDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
         }
     }
     

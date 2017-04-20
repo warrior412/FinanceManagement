@@ -9,3 +9,6 @@ D:\JunF\Projects\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement
 D:\JunF\Projects\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmWalletManagement.resources
 D:\JunF\Projects\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.Custom.CustomListViewItem.resources
 D:\JunF\Projects\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.Custom.CustomTitlePanel.resources
+D:\JunF\Projects\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmWalletInfo.resources
+D:\JunF\Projects\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmLogin.resources
+D:\JunF\Projects\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.csprojResolveAssemblyReference.cache

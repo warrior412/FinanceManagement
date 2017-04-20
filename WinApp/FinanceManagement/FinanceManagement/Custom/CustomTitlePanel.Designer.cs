@@ -1,4 +1,5 @@
-﻿namespace FinanceManagement.Custom
+﻿using System.Drawing;
+namespace FinanceManagement.Custom
 {
     partial class CustomTitlePanel
     {
@@ -37,11 +38,13 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblTitle.Location = new System.Drawing.Point(3, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(271, 33);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "label1";
+            this.lblTitle.Text = "Title";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
@@ -69,6 +72,7 @@
             this.Size = new System.Drawing.Size(277, 33);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+
             this.ResumeLayout(false);
 
         }

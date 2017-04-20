@@ -44,6 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\AppContext.cs" />
+    <Compile Include="Class\Encrypt.cs" />
+    <Compile Include="Class\Rijndael.cs" />
     <Compile Include="Custom\CustomListViewItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -60,6 +63,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FinanceManagement.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWalletInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWalletInfo.Designer.cs">
+      <DependentUpon>frmWalletInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="frmWalletManagement.cs">
       <SubType>Form</SubType>
@@ -80,6 +95,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Custom\CustomTitlePanel.resx">
       <DependentUpon>CustomTitlePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWalletInfo.resx">
+      <DependentUpon>frmWalletInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmWalletManagement.resx">
       <DependentUpon>frmWalletManagement.cs</DependentUpon>
@@ -127,6 +148,7 @@
   <ItemGroup>
     <None Include="Resources\dollar-folder-icon.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
