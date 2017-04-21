@@ -14,19 +14,24 @@ namespace FinanceManagement
 {
     public partial class frmWalletManagement : Form
     {
+        private BackgroundWorker worker = null;
         public frmWalletManagement()
         {
             InitializeComponent();
+            worker = new BackgroundWorker();
             GetListWallet();
-            GetActivityData();
+            //GetActivityData();
         }
 
-        private void GetActivityData()
+        private void GetActivityData(int WalletID)
         {
-            vActivityBindingSource.DataSource = v_ActivityTableAdapter1.v_Activity_GetAllDeposit();
-            vActivityBindingSource1.DataSource = v_ActivityTableAdapter1.v_Activity_GetAllWithDraw();
+            vActivityBindingSource.DataSource = v_ActivityTableAdapter1.v_Activity_GetAllDeposit(WalletID);
+            vActivityBindingSource1.DataSource = v_ActivityTableAdapter1.v_Activity_GetAllWithDraw(WalletID);
+            vActivityBindingSource2.DataSource = v_ActivityTableAdapter1.v_Activity_GetAllTransfer(WalletID);
+
             dgvDeposit.DataSource = vActivityBindingSource;
             dgvWithDraw.DataSource = vActivityBindingSource1;
+            dgvTransfer.DataSource = vActivityBindingSource2;
         }
 
         private void GetListWallet()
@@ -57,11 +62,21 @@ namespace FinanceManagement
                     lvWallet.Controls.Add(item, 0, index++);
                 }  
                 lvWallet.Refresh();
+
+
             }catch(Exception ex)
             {
                 MessageBox.Show("Đã có lỗi xảy ra! Vui lòng liên hệ người quản trị.", ex.Message);
             }
         }
+
+
+        private void SetSummaryBox()
+        {
+            lblSummary_FullName.Text = AppContext.GetInstance().UserInfo.Fullname;
+        }
+
+
 
         void item_OnReloadListView(object sender, EventArgs e)
         {
@@ -85,6 +100,8 @@ namespace FinanceManagement
                         selectedItem.BackColor = Color.Transparent;
                 }
             }
+
+            GetActivityData(int.Parse(item.WalletID));
         }
 
 
