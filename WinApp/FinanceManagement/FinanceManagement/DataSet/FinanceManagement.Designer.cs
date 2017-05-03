@@ -4225,6 +4225,7 @@ namespace FinanceManagement.DataSet.FinanceManagementTableAdapters {
             this._commandCollection[2].CommandText = "dbo.Category_Update";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Category_ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Category_Name", global::System.Data.SqlDbType.NVarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Category_Description", global::System.Data.SqlDbType.NVarChar, 500, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Category_Status", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -4296,25 +4297,31 @@ namespace FinanceManagement.DataSet.FinanceManagementTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual object Category_Update(string Category_Name, string Category_Description, global::System.Nullable<int> Category_Status) {
+        public virtual object Category_Update(global::System.Nullable<int> Category_ID, string Category_Name, string Category_Description, global::System.Nullable<int> Category_Status) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
-            if ((Category_Name == null)) {
-                command.Parameters[1].Value = global::System.DBNull.Value;
+            if ((Category_ID.HasValue == true)) {
+                command.Parameters[1].Value = ((int)(Category_ID.Value));
             }
             else {
-                command.Parameters[1].Value = ((string)(Category_Name));
+                command.Parameters[1].Value = global::System.DBNull.Value;
             }
-            if ((Category_Description == null)) {
+            if ((Category_Name == null)) {
                 command.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                command.Parameters[2].Value = ((string)(Category_Description));
+                command.Parameters[2].Value = ((string)(Category_Name));
             }
-            if ((Category_Status.HasValue == true)) {
-                command.Parameters[3].Value = ((int)(Category_Status.Value));
+            if ((Category_Description == null)) {
+                command.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                command.Parameters[3].Value = global::System.DBNull.Value;
+                command.Parameters[3].Value = ((string)(Category_Description));
+            }
+            if ((Category_Status.HasValue == true)) {
+                command.Parameters[4].Value = ((int)(Category_Status.Value));
+            }
+            else {
+                command.Parameters[4].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 

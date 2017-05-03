@@ -71,5 +71,38 @@ namespace FinanceManagement
                 FillData();
             }
         }
+
+        private void dvCategory_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                
+
+                ContextMenu m = new ContextMenu();
+                int currentMouseOverRow = dvCategory.HitTest(e.X, e.Y).RowIndex;
+
+                dvCategory.CurrentCell = dvCategory.Rows[currentMouseOverRow].Cells[0];
+                dvCategory.Rows[currentMouseOverRow].Selected = true;
+                dvCategory.Focus();
+
+                m.MenuItems.Add(new MenuItem("Chỉnh sửa", (o, ev) =>
+                {
+
+                    frmCategoryInfo frm = new frmCategoryInfo(currentCategory);
+                    if (frm.ShowDialog() == DialogResult.OK)
+                    {
+                        FillData();
+                    }
+                }));
+                m.MenuItems.Add(new MenuItem("Đóng"));
+
+
+                
+
+                m.Show(dvCategory, new Point(e.X, e.Y));
+
+            }
+        }
+
     }
 }

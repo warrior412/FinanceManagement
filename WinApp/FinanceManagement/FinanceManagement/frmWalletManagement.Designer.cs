@@ -33,17 +33,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -56,7 +56,50 @@
             this.layout1_2_1 = new System.Windows.Forms.TableLayoutPanel();
             this.layout1_2_1_1 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvWithDraw = new System.Windows.Forms.DataGridView();
+            this.createDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.walletDestIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.walletDestNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.walletDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activityContentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activityTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activityStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vActivityBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.financeManagement = new FinanceManagement.DataSet.FinanceManagement();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvDeposit = new System.Windows.Forms.DataGridView();
+            this.createDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.walletDestIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.walletDestNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.walletDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activityContentDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activityTypeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activityStatusDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amountDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vActivityBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dgvTransfer = new System.Windows.Forms.DataGridView();
+            this.createDateDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryNameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemNameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.walletDestIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.walletDestNameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.walletDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activityContentDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activityTypeDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.activityStatusDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amountDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vActivityBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.layout1_2_1_2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -94,51 +137,8 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.dgvTransfer = new System.Windows.Forms.DataGridView();
-            this.vActivityBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.financeManagement = new FinanceManagement.DataSet.FinanceManagement();
-            this.vActivityBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.m_WalletTableAdapter1 = new FinanceManagement.DataSet.FinanceManagementTableAdapters.M_WalletTableAdapter();
             this.v_ActivityTableAdapter1 = new FinanceManagement.DataSet.FinanceManagementTableAdapters.v_ActivityTableAdapter();
-            this.vActivityBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.createDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.walletDestIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.walletDestNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.walletDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.activityContentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.activityTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.activityStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.createDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.walletDestIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.walletDestNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.walletDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.activityContentDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.activityTypeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.activityStatusDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.amountDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.createDateDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryNameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemNameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.walletDestIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.walletDestNameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.walletDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.activityContentDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.activityTypeDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.activityStatusDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.amountDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelTitleListWallet = new FinanceManagement.Custom.CustomTitlePanel();
             this.panelTitleWalletInfo = new FinanceManagement.Custom.CustomTitlePanel();
             this.panelTitleWithdraw = new FinanceManagement.Custom.CustomTitlePanel();
@@ -159,19 +159,19 @@
             this.layout1_2_1.SuspendLayout();
             this.layout1_2_1_1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvWithDraw)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vActivityBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.financeManagement)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDeposit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vActivityBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTransfer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vActivityBindingSource2)).BeginInit();
             this.layout1_2_1_2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.layoutSummary.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTransfer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vActivityBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.financeManagement)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vActivityBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vActivityBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // layout1
@@ -354,6 +354,139 @@
             this.dgvWithDraw.Size = new System.Drawing.Size(756, 264);
             this.dgvWithDraw.TabIndex = 2;
             // 
+            // createDateDataGridViewTextBoxColumn
+            // 
+            this.createDateDataGridViewTextBoxColumn.DataPropertyName = "Create_Date";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Format = "dd/MM/yyyy";
+            this.createDateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            this.createDateDataGridViewTextBoxColumn.HeaderText = "Ngày nhập";
+            this.createDateDataGridViewTextBoxColumn.Name = "createDateDataGridViewTextBoxColumn";
+            this.createDateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // categoryIDDataGridViewTextBoxColumn
+            // 
+            this.categoryIDDataGridViewTextBoxColumn.DataPropertyName = "Category_ID";
+            this.categoryIDDataGridViewTextBoxColumn.HeaderText = "Category_ID";
+            this.categoryIDDataGridViewTextBoxColumn.Name = "categoryIDDataGridViewTextBoxColumn";
+            this.categoryIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.categoryIDDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // categoryNameDataGridViewTextBoxColumn
+            // 
+            this.categoryNameDataGridViewTextBoxColumn.DataPropertyName = "Category_Name";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoryNameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            this.categoryNameDataGridViewTextBoxColumn.HeaderText = "Danh mục";
+            this.categoryNameDataGridViewTextBoxColumn.Name = "categoryNameDataGridViewTextBoxColumn";
+            this.categoryNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // itemIDDataGridViewTextBoxColumn
+            // 
+            this.itemIDDataGridViewTextBoxColumn.DataPropertyName = "Item_ID";
+            this.itemIDDataGridViewTextBoxColumn.HeaderText = "Item_ID";
+            this.itemIDDataGridViewTextBoxColumn.Name = "itemIDDataGridViewTextBoxColumn";
+            this.itemIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.itemIDDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // itemNameDataGridViewTextBoxColumn
+            // 
+            this.itemNameDataGridViewTextBoxColumn.DataPropertyName = "Item_Name";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemNameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
+            this.itemNameDataGridViewTextBoxColumn.HeaderText = "Mục chi";
+            this.itemNameDataGridViewTextBoxColumn.Name = "itemNameDataGridViewTextBoxColumn";
+            this.itemNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // walletDestIDDataGridViewTextBoxColumn
+            // 
+            this.walletDestIDDataGridViewTextBoxColumn.DataPropertyName = "WalletDestID";
+            this.walletDestIDDataGridViewTextBoxColumn.HeaderText = "WalletDestID";
+            this.walletDestIDDataGridViewTextBoxColumn.Name = "walletDestIDDataGridViewTextBoxColumn";
+            this.walletDestIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.walletDestIDDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // walletDestNameDataGridViewTextBoxColumn
+            // 
+            this.walletDestNameDataGridViewTextBoxColumn.DataPropertyName = "WalletDestName";
+            this.walletDestNameDataGridViewTextBoxColumn.HeaderText = "WalletDestName";
+            this.walletDestNameDataGridViewTextBoxColumn.Name = "walletDestNameDataGridViewTextBoxColumn";
+            this.walletDestNameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.walletDestNameDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // walletDataGridViewTextBoxColumn
+            // 
+            this.walletDataGridViewTextBoxColumn.DataPropertyName = "Wallet";
+            this.walletDataGridViewTextBoxColumn.HeaderText = "Wallet";
+            this.walletDataGridViewTextBoxColumn.Name = "walletDataGridViewTextBoxColumn";
+            this.walletDataGridViewTextBoxColumn.ReadOnly = true;
+            this.walletDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // activityContentDataGridViewTextBoxColumn
+            // 
+            this.activityContentDataGridViewTextBoxColumn.DataPropertyName = "Activity_Content";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.activityContentDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
+            this.activityContentDataGridViewTextBoxColumn.HeaderText = "Mô tả";
+            this.activityContentDataGridViewTextBoxColumn.Name = "activityContentDataGridViewTextBoxColumn";
+            this.activityContentDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // activityTypeDataGridViewTextBoxColumn
+            // 
+            this.activityTypeDataGridViewTextBoxColumn.DataPropertyName = "Activity_Type";
+            this.activityTypeDataGridViewTextBoxColumn.HeaderText = "Activity_Type";
+            this.activityTypeDataGridViewTextBoxColumn.Name = "activityTypeDataGridViewTextBoxColumn";
+            this.activityTypeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.activityTypeDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // activityStatusDataGridViewTextBoxColumn
+            // 
+            this.activityStatusDataGridViewTextBoxColumn.DataPropertyName = "Activity_Status";
+            this.activityStatusDataGridViewTextBoxColumn.HeaderText = "Activity_Status";
+            this.activityStatusDataGridViewTextBoxColumn.Name = "activityStatusDataGridViewTextBoxColumn";
+            this.activityStatusDataGridViewTextBoxColumn.ReadOnly = true;
+            this.activityStatusDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // amountDataGridViewTextBoxColumn
+            // 
+            this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.Format = "#,### VND";
+            this.amountDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
+            this.amountDataGridViewTextBoxColumn.HeaderText = "Số tiền";
+            this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
+            this.amountDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // vActivityBindingSource
+            // 
+            this.vActivityBindingSource.DataMember = "v_Activity";
+            this.vActivityBindingSource.DataSource = this.financeManagement;
+            // 
+            // financeManagement
+            // 
+            this.financeManagement.DataSetName = "FinanceManagement";
+            this.financeManagement.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.dgvDeposit, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.dgvTransfer, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 321);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(756, 264);
+            this.tableLayoutPanel1.TabIndex = 3;
+            // 
             // dgvDeposit
             // 
             this.dgvDeposit.AllowUserToAddRows = false;
@@ -393,6 +526,296 @@
             this.dgvDeposit.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDeposit.Size = new System.Drawing.Size(372, 258);
             this.dgvDeposit.TabIndex = 3;
+            // 
+            // createDateDataGridViewTextBoxColumn1
+            // 
+            this.createDateDataGridViewTextBoxColumn1.DataPropertyName = "Create_Date";
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.Format = "dd/MM/yyyy";
+            this.createDateDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle11;
+            this.createDateDataGridViewTextBoxColumn1.HeaderText = "Ngày nhập";
+            this.createDateDataGridViewTextBoxColumn1.Name = "createDateDataGridViewTextBoxColumn1";
+            this.createDateDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // categoryIDDataGridViewTextBoxColumn1
+            // 
+            this.categoryIDDataGridViewTextBoxColumn1.DataPropertyName = "Category_ID";
+            this.categoryIDDataGridViewTextBoxColumn1.HeaderText = "Category_ID";
+            this.categoryIDDataGridViewTextBoxColumn1.Name = "categoryIDDataGridViewTextBoxColumn1";
+            this.categoryIDDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.categoryIDDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // categoryNameDataGridViewTextBoxColumn1
+            // 
+            this.categoryNameDataGridViewTextBoxColumn1.DataPropertyName = "Category_Name";
+            this.categoryNameDataGridViewTextBoxColumn1.HeaderText = "Category_Name";
+            this.categoryNameDataGridViewTextBoxColumn1.Name = "categoryNameDataGridViewTextBoxColumn1";
+            this.categoryNameDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.categoryNameDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // itemIDDataGridViewTextBoxColumn1
+            // 
+            this.itemIDDataGridViewTextBoxColumn1.DataPropertyName = "Item_ID";
+            this.itemIDDataGridViewTextBoxColumn1.HeaderText = "Item_ID";
+            this.itemIDDataGridViewTextBoxColumn1.Name = "itemIDDataGridViewTextBoxColumn1";
+            this.itemIDDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.itemIDDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // itemNameDataGridViewTextBoxColumn1
+            // 
+            this.itemNameDataGridViewTextBoxColumn1.DataPropertyName = "Item_Name";
+            this.itemNameDataGridViewTextBoxColumn1.HeaderText = "Item_Name";
+            this.itemNameDataGridViewTextBoxColumn1.Name = "itemNameDataGridViewTextBoxColumn1";
+            this.itemNameDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.itemNameDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // walletDestIDDataGridViewTextBoxColumn1
+            // 
+            this.walletDestIDDataGridViewTextBoxColumn1.DataPropertyName = "WalletDestID";
+            this.walletDestIDDataGridViewTextBoxColumn1.HeaderText = "WalletDestID";
+            this.walletDestIDDataGridViewTextBoxColumn1.Name = "walletDestIDDataGridViewTextBoxColumn1";
+            this.walletDestIDDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.walletDestIDDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // walletDestNameDataGridViewTextBoxColumn1
+            // 
+            this.walletDestNameDataGridViewTextBoxColumn1.DataPropertyName = "WalletDestName";
+            this.walletDestNameDataGridViewTextBoxColumn1.HeaderText = "WalletDestName";
+            this.walletDestNameDataGridViewTextBoxColumn1.Name = "walletDestNameDataGridViewTextBoxColumn1";
+            this.walletDestNameDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.walletDestNameDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // walletDataGridViewTextBoxColumn1
+            // 
+            this.walletDataGridViewTextBoxColumn1.DataPropertyName = "Wallet";
+            this.walletDataGridViewTextBoxColumn1.HeaderText = "Wallet";
+            this.walletDataGridViewTextBoxColumn1.Name = "walletDataGridViewTextBoxColumn1";
+            this.walletDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.walletDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // activityContentDataGridViewTextBoxColumn1
+            // 
+            this.activityContentDataGridViewTextBoxColumn1.DataPropertyName = "Activity_Content";
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.activityContentDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle12;
+            this.activityContentDataGridViewTextBoxColumn1.HeaderText = "Mô tả";
+            this.activityContentDataGridViewTextBoxColumn1.Name = "activityContentDataGridViewTextBoxColumn1";
+            this.activityContentDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // activityTypeDataGridViewTextBoxColumn1
+            // 
+            this.activityTypeDataGridViewTextBoxColumn1.DataPropertyName = "Activity_Type";
+            this.activityTypeDataGridViewTextBoxColumn1.HeaderText = "Activity_Type";
+            this.activityTypeDataGridViewTextBoxColumn1.Name = "activityTypeDataGridViewTextBoxColumn1";
+            this.activityTypeDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.activityTypeDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // activityStatusDataGridViewTextBoxColumn1
+            // 
+            this.activityStatusDataGridViewTextBoxColumn1.DataPropertyName = "Activity_Status";
+            this.activityStatusDataGridViewTextBoxColumn1.HeaderText = "Activity_Status";
+            this.activityStatusDataGridViewTextBoxColumn1.Name = "activityStatusDataGridViewTextBoxColumn1";
+            this.activityStatusDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.activityStatusDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // amountDataGridViewTextBoxColumn1
+            // 
+            this.amountDataGridViewTextBoxColumn1.DataPropertyName = "Amount";
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.Format = "#,### VND";
+            this.amountDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle13;
+            this.amountDataGridViewTextBoxColumn1.HeaderText = "Số tiền";
+            this.amountDataGridViewTextBoxColumn1.Name = "amountDataGridViewTextBoxColumn1";
+            this.amountDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // vActivityBindingSource1
+            // 
+            this.vActivityBindingSource1.DataMember = "v_Activity";
+            this.vActivityBindingSource1.DataSource = this.financeManagement;
+            // 
+            // dgvTransfer
+            // 
+            this.dgvTransfer.AllowUserToAddRows = false;
+            this.dgvTransfer.AllowUserToDeleteRows = false;
+            this.dgvTransfer.AutoGenerateColumns = false;
+            this.dgvTransfer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTransfer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.dgvTransfer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTransfer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.createDateDataGridViewTextBoxColumn2,
+            this.categoryIDDataGridViewTextBoxColumn2,
+            this.categoryNameDataGridViewTextBoxColumn2,
+            this.itemIDDataGridViewTextBoxColumn2,
+            this.itemNameDataGridViewTextBoxColumn2,
+            this.walletDestIDDataGridViewTextBoxColumn2,
+            this.walletDestNameDataGridViewTextBoxColumn2,
+            this.walletDataGridViewTextBoxColumn2,
+            this.activityContentDataGridViewTextBoxColumn2,
+            this.activityTypeDataGridViewTextBoxColumn2,
+            this.activityStatusDataGridViewTextBoxColumn2,
+            this.amountDataGridViewTextBoxColumn2,
+            this.userNameDataGridViewTextBoxColumn});
+            this.dgvTransfer.DataSource = this.vActivityBindingSource2;
+            this.dgvTransfer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvTransfer.Location = new System.Drawing.Point(381, 3);
+            this.dgvTransfer.Name = "dgvTransfer";
+            this.dgvTransfer.ReadOnly = true;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTransfer.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            this.dgvTransfer.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dgvTransfer.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvTransfer.RowTemplate.Height = 25;
+            this.dgvTransfer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvTransfer.Size = new System.Drawing.Size(372, 258);
+            this.dgvTransfer.TabIndex = 4;
+            // 
+            // createDateDataGridViewTextBoxColumn2
+            // 
+            this.createDateDataGridViewTextBoxColumn2.DataPropertyName = "Create_Date";
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.Format = "dd/MM/yyyy";
+            this.createDateDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle15;
+            this.createDateDataGridViewTextBoxColumn2.HeaderText = "Ngày chuyển";
+            this.createDateDataGridViewTextBoxColumn2.Name = "createDateDataGridViewTextBoxColumn2";
+            this.createDateDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.createDateDataGridViewTextBoxColumn2.Width = 112;
+            // 
+            // categoryIDDataGridViewTextBoxColumn2
+            // 
+            this.categoryIDDataGridViewTextBoxColumn2.DataPropertyName = "Category_ID";
+            this.categoryIDDataGridViewTextBoxColumn2.HeaderText = "Category_ID";
+            this.categoryIDDataGridViewTextBoxColumn2.Name = "categoryIDDataGridViewTextBoxColumn2";
+            this.categoryIDDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.categoryIDDataGridViewTextBoxColumn2.Visible = false;
+            this.categoryIDDataGridViewTextBoxColumn2.Width = 108;
+            // 
+            // categoryNameDataGridViewTextBoxColumn2
+            // 
+            this.categoryNameDataGridViewTextBoxColumn2.DataPropertyName = "Category_Name";
+            this.categoryNameDataGridViewTextBoxColumn2.HeaderText = "Category_Name";
+            this.categoryNameDataGridViewTextBoxColumn2.Name = "categoryNameDataGridViewTextBoxColumn2";
+            this.categoryNameDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.categoryNameDataGridViewTextBoxColumn2.Visible = false;
+            this.categoryNameDataGridViewTextBoxColumn2.Width = 132;
+            // 
+            // itemIDDataGridViewTextBoxColumn2
+            // 
+            this.itemIDDataGridViewTextBoxColumn2.DataPropertyName = "Item_ID";
+            this.itemIDDataGridViewTextBoxColumn2.HeaderText = "Item_ID";
+            this.itemIDDataGridViewTextBoxColumn2.Name = "itemIDDataGridViewTextBoxColumn2";
+            this.itemIDDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.itemIDDataGridViewTextBoxColumn2.Visible = false;
+            this.itemIDDataGridViewTextBoxColumn2.Width = 78;
+            // 
+            // itemNameDataGridViewTextBoxColumn2
+            // 
+            this.itemNameDataGridViewTextBoxColumn2.DataPropertyName = "Item_Name";
+            this.itemNameDataGridViewTextBoxColumn2.HeaderText = "Item_Name";
+            this.itemNameDataGridViewTextBoxColumn2.Name = "itemNameDataGridViewTextBoxColumn2";
+            this.itemNameDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.itemNameDataGridViewTextBoxColumn2.Visible = false;
+            this.itemNameDataGridViewTextBoxColumn2.Width = 102;
+            // 
+            // walletDestIDDataGridViewTextBoxColumn2
+            // 
+            this.walletDestIDDataGridViewTextBoxColumn2.DataPropertyName = "WalletDestID";
+            this.walletDestIDDataGridViewTextBoxColumn2.HeaderText = "WalletDestID";
+            this.walletDestIDDataGridViewTextBoxColumn2.Name = "walletDestIDDataGridViewTextBoxColumn2";
+            this.walletDestIDDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.walletDestIDDataGridViewTextBoxColumn2.Visible = false;
+            this.walletDestIDDataGridViewTextBoxColumn2.Width = 112;
+            // 
+            // walletDestNameDataGridViewTextBoxColumn2
+            // 
+            this.walletDestNameDataGridViewTextBoxColumn2.DataPropertyName = "WalletDestName";
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.walletDestNameDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle16;
+            this.walletDestNameDataGridViewTextBoxColumn2.HeaderText = "Ví nhận";
+            this.walletDestNameDataGridViewTextBoxColumn2.Name = "walletDestNameDataGridViewTextBoxColumn2";
+            this.walletDestNameDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.walletDestNameDataGridViewTextBoxColumn2.Width = 77;
+            // 
+            // walletDataGridViewTextBoxColumn2
+            // 
+            this.walletDataGridViewTextBoxColumn2.DataPropertyName = "Wallet";
+            this.walletDataGridViewTextBoxColumn2.HeaderText = "Wallet";
+            this.walletDataGridViewTextBoxColumn2.Name = "walletDataGridViewTextBoxColumn2";
+            this.walletDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.walletDataGridViewTextBoxColumn2.Visible = false;
+            this.walletDataGridViewTextBoxColumn2.Width = 71;
+            // 
+            // activityContentDataGridViewTextBoxColumn2
+            // 
+            this.activityContentDataGridViewTextBoxColumn2.DataPropertyName = "Activity_Content";
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.activityContentDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle17;
+            this.activityContentDataGridViewTextBoxColumn2.HeaderText = "Mô tả";
+            this.activityContentDataGridViewTextBoxColumn2.Name = "activityContentDataGridViewTextBoxColumn2";
+            this.activityContentDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.activityContentDataGridViewTextBoxColumn2.Width = 66;
+            // 
+            // activityTypeDataGridViewTextBoxColumn2
+            // 
+            this.activityTypeDataGridViewTextBoxColumn2.DataPropertyName = "Activity_Type";
+            this.activityTypeDataGridViewTextBoxColumn2.HeaderText = "Activity_Type";
+            this.activityTypeDataGridViewTextBoxColumn2.Name = "activityTypeDataGridViewTextBoxColumn2";
+            this.activityTypeDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.activityTypeDataGridViewTextBoxColumn2.Visible = false;
+            this.activityTypeDataGridViewTextBoxColumn2.Width = 114;
+            // 
+            // activityStatusDataGridViewTextBoxColumn2
+            // 
+            this.activityStatusDataGridViewTextBoxColumn2.DataPropertyName = "Activity_Status";
+            this.activityStatusDataGridViewTextBoxColumn2.HeaderText = "Activity_Status";
+            this.activityStatusDataGridViewTextBoxColumn2.Name = "activityStatusDataGridViewTextBoxColumn2";
+            this.activityStatusDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.activityStatusDataGridViewTextBoxColumn2.Visible = false;
+            this.activityStatusDataGridViewTextBoxColumn2.Width = 119;
+            // 
+            // amountDataGridViewTextBoxColumn2
+            // 
+            this.amountDataGridViewTextBoxColumn2.DataPropertyName = "Amount";
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.Format = "#,### VND";
+            this.amountDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle18;
+            this.amountDataGridViewTextBoxColumn2.HeaderText = "Số tiền";
+            this.amountDataGridViewTextBoxColumn2.Name = "amountDataGridViewTextBoxColumn2";
+            this.amountDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.amountDataGridViewTextBoxColumn2.Width = 74;
+            // 
+            // userNameDataGridViewTextBoxColumn
+            // 
+            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "UserName";
+            this.userNameDataGridViewTextBoxColumn.HeaderText = "UserName";
+            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
+            this.userNameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.userNameDataGridViewTextBoxColumn.Visible = false;
+            this.userNameDataGridViewTextBoxColumn.Width = 99;
+            // 
+            // vActivityBindingSource2
+            // 
+            this.vActivityBindingSource2.DataMember = "v_Activity";
+            this.vActivityBindingSource2.DataSource = this.financeManagement;
             // 
             // layout1_2_1_2
             // 
@@ -817,85 +1240,6 @@
             this.dateTimePicker3.Size = new System.Drawing.Size(184, 20);
             this.dateTimePicker3.TabIndex = 1;
             // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.dgvDeposit, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.dgvTransfer, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 321);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(756, 264);
-            this.tableLayoutPanel1.TabIndex = 3;
-            // 
-            // dgvTransfer
-            // 
-            this.dgvTransfer.AllowUserToAddRows = false;
-            this.dgvTransfer.AllowUserToDeleteRows = false;
-            this.dgvTransfer.AutoGenerateColumns = false;
-            this.dgvTransfer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTransfer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            this.dgvTransfer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTransfer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.createDateDataGridViewTextBoxColumn2,
-            this.categoryIDDataGridViewTextBoxColumn2,
-            this.categoryNameDataGridViewTextBoxColumn2,
-            this.itemIDDataGridViewTextBoxColumn2,
-            this.itemNameDataGridViewTextBoxColumn2,
-            this.walletDestIDDataGridViewTextBoxColumn2,
-            this.walletDestNameDataGridViewTextBoxColumn2,
-            this.walletDataGridViewTextBoxColumn2,
-            this.activityContentDataGridViewTextBoxColumn2,
-            this.activityTypeDataGridViewTextBoxColumn2,
-            this.activityStatusDataGridViewTextBoxColumn2,
-            this.amountDataGridViewTextBoxColumn2,
-            this.userNameDataGridViewTextBoxColumn});
-            this.dgvTransfer.DataSource = this.vActivityBindingSource2;
-            this.dgvTransfer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvTransfer.Location = new System.Drawing.Point(381, 3);
-            this.dgvTransfer.Name = "dgvTransfer";
-            this.dgvTransfer.ReadOnly = true;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTransfer.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
-            this.dgvTransfer.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvTransfer.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvTransfer.RowTemplate.Height = 25;
-            this.dgvTransfer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTransfer.Size = new System.Drawing.Size(372, 258);
-            this.dgvTransfer.TabIndex = 4;
-            // 
-            // vActivityBindingSource
-            // 
-            this.vActivityBindingSource.DataMember = "v_Activity";
-            this.vActivityBindingSource.DataSource = this.financeManagement;
-            // 
-            // financeManagement
-            // 
-            this.financeManagement.DataSetName = "FinanceManagement";
-            this.financeManagement.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // vActivityBindingSource1
-            // 
-            this.vActivityBindingSource1.DataMember = "v_Activity";
-            this.vActivityBindingSource1.DataSource = this.financeManagement;
-            // 
             // m_WalletTableAdapter1
             // 
             this.m_WalletTableAdapter1.ClearBeforeFill = true;
@@ -903,350 +1247,6 @@
             // v_ActivityTableAdapter1
             // 
             this.v_ActivityTableAdapter1.ClearBeforeFill = true;
-            // 
-            // vActivityBindingSource2
-            // 
-            this.vActivityBindingSource2.DataMember = "v_Activity";
-            this.vActivityBindingSource2.DataSource = this.financeManagement;
-            // 
-            // createDateDataGridViewTextBoxColumn
-            // 
-            this.createDateDataGridViewTextBoxColumn.DataPropertyName = "Create_Date";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.Format = "dd/MM/yyyy";
-            this.createDateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
-            this.createDateDataGridViewTextBoxColumn.HeaderText = "Ngày nhập";
-            this.createDateDataGridViewTextBoxColumn.Name = "createDateDataGridViewTextBoxColumn";
-            this.createDateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // categoryIDDataGridViewTextBoxColumn
-            // 
-            this.categoryIDDataGridViewTextBoxColumn.DataPropertyName = "Category_ID";
-            this.categoryIDDataGridViewTextBoxColumn.HeaderText = "Category_ID";
-            this.categoryIDDataGridViewTextBoxColumn.Name = "categoryIDDataGridViewTextBoxColumn";
-            this.categoryIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.categoryIDDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // categoryNameDataGridViewTextBoxColumn
-            // 
-            this.categoryNameDataGridViewTextBoxColumn.DataPropertyName = "Category_Name";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.categoryNameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.categoryNameDataGridViewTextBoxColumn.HeaderText = "Danh mục";
-            this.categoryNameDataGridViewTextBoxColumn.Name = "categoryNameDataGridViewTextBoxColumn";
-            this.categoryNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // itemIDDataGridViewTextBoxColumn
-            // 
-            this.itemIDDataGridViewTextBoxColumn.DataPropertyName = "Item_ID";
-            this.itemIDDataGridViewTextBoxColumn.HeaderText = "Item_ID";
-            this.itemIDDataGridViewTextBoxColumn.Name = "itemIDDataGridViewTextBoxColumn";
-            this.itemIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.itemIDDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // itemNameDataGridViewTextBoxColumn
-            // 
-            this.itemNameDataGridViewTextBoxColumn.DataPropertyName = "Item_Name";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemNameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
-            this.itemNameDataGridViewTextBoxColumn.HeaderText = "Mục chi";
-            this.itemNameDataGridViewTextBoxColumn.Name = "itemNameDataGridViewTextBoxColumn";
-            this.itemNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // walletDestIDDataGridViewTextBoxColumn
-            // 
-            this.walletDestIDDataGridViewTextBoxColumn.DataPropertyName = "WalletDestID";
-            this.walletDestIDDataGridViewTextBoxColumn.HeaderText = "WalletDestID";
-            this.walletDestIDDataGridViewTextBoxColumn.Name = "walletDestIDDataGridViewTextBoxColumn";
-            this.walletDestIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.walletDestIDDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // walletDestNameDataGridViewTextBoxColumn
-            // 
-            this.walletDestNameDataGridViewTextBoxColumn.DataPropertyName = "WalletDestName";
-            this.walletDestNameDataGridViewTextBoxColumn.HeaderText = "WalletDestName";
-            this.walletDestNameDataGridViewTextBoxColumn.Name = "walletDestNameDataGridViewTextBoxColumn";
-            this.walletDestNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.walletDestNameDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // walletDataGridViewTextBoxColumn
-            // 
-            this.walletDataGridViewTextBoxColumn.DataPropertyName = "Wallet";
-            this.walletDataGridViewTextBoxColumn.HeaderText = "Wallet";
-            this.walletDataGridViewTextBoxColumn.Name = "walletDataGridViewTextBoxColumn";
-            this.walletDataGridViewTextBoxColumn.ReadOnly = true;
-            this.walletDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // activityContentDataGridViewTextBoxColumn
-            // 
-            this.activityContentDataGridViewTextBoxColumn.DataPropertyName = "Activity_Content";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.activityContentDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
-            this.activityContentDataGridViewTextBoxColumn.HeaderText = "Mô tả";
-            this.activityContentDataGridViewTextBoxColumn.Name = "activityContentDataGridViewTextBoxColumn";
-            this.activityContentDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // activityTypeDataGridViewTextBoxColumn
-            // 
-            this.activityTypeDataGridViewTextBoxColumn.DataPropertyName = "Activity_Type";
-            this.activityTypeDataGridViewTextBoxColumn.HeaderText = "Activity_Type";
-            this.activityTypeDataGridViewTextBoxColumn.Name = "activityTypeDataGridViewTextBoxColumn";
-            this.activityTypeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.activityTypeDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // activityStatusDataGridViewTextBoxColumn
-            // 
-            this.activityStatusDataGridViewTextBoxColumn.DataPropertyName = "Activity_Status";
-            this.activityStatusDataGridViewTextBoxColumn.HeaderText = "Activity_Status";
-            this.activityStatusDataGridViewTextBoxColumn.Name = "activityStatusDataGridViewTextBoxColumn";
-            this.activityStatusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.activityStatusDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // amountDataGridViewTextBoxColumn
-            // 
-            this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.Format = "#,### VND";
-            this.amountDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
-            this.amountDataGridViewTextBoxColumn.HeaderText = "Số tiền";
-            this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
-            this.amountDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // createDateDataGridViewTextBoxColumn1
-            // 
-            this.createDateDataGridViewTextBoxColumn1.DataPropertyName = "Create_Date";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.Format = "dd/MM/yyyy";
-            this.createDateDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle11;
-            this.createDateDataGridViewTextBoxColumn1.HeaderText = "Ngày nhập";
-            this.createDateDataGridViewTextBoxColumn1.Name = "createDateDataGridViewTextBoxColumn1";
-            this.createDateDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // categoryIDDataGridViewTextBoxColumn1
-            // 
-            this.categoryIDDataGridViewTextBoxColumn1.DataPropertyName = "Category_ID";
-            this.categoryIDDataGridViewTextBoxColumn1.HeaderText = "Category_ID";
-            this.categoryIDDataGridViewTextBoxColumn1.Name = "categoryIDDataGridViewTextBoxColumn1";
-            this.categoryIDDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.categoryIDDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // categoryNameDataGridViewTextBoxColumn1
-            // 
-            this.categoryNameDataGridViewTextBoxColumn1.DataPropertyName = "Category_Name";
-            this.categoryNameDataGridViewTextBoxColumn1.HeaderText = "Category_Name";
-            this.categoryNameDataGridViewTextBoxColumn1.Name = "categoryNameDataGridViewTextBoxColumn1";
-            this.categoryNameDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.categoryNameDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // itemIDDataGridViewTextBoxColumn1
-            // 
-            this.itemIDDataGridViewTextBoxColumn1.DataPropertyName = "Item_ID";
-            this.itemIDDataGridViewTextBoxColumn1.HeaderText = "Item_ID";
-            this.itemIDDataGridViewTextBoxColumn1.Name = "itemIDDataGridViewTextBoxColumn1";
-            this.itemIDDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.itemIDDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // itemNameDataGridViewTextBoxColumn1
-            // 
-            this.itemNameDataGridViewTextBoxColumn1.DataPropertyName = "Item_Name";
-            this.itemNameDataGridViewTextBoxColumn1.HeaderText = "Item_Name";
-            this.itemNameDataGridViewTextBoxColumn1.Name = "itemNameDataGridViewTextBoxColumn1";
-            this.itemNameDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.itemNameDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // walletDestIDDataGridViewTextBoxColumn1
-            // 
-            this.walletDestIDDataGridViewTextBoxColumn1.DataPropertyName = "WalletDestID";
-            this.walletDestIDDataGridViewTextBoxColumn1.HeaderText = "WalletDestID";
-            this.walletDestIDDataGridViewTextBoxColumn1.Name = "walletDestIDDataGridViewTextBoxColumn1";
-            this.walletDestIDDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.walletDestIDDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // walletDestNameDataGridViewTextBoxColumn1
-            // 
-            this.walletDestNameDataGridViewTextBoxColumn1.DataPropertyName = "WalletDestName";
-            this.walletDestNameDataGridViewTextBoxColumn1.HeaderText = "WalletDestName";
-            this.walletDestNameDataGridViewTextBoxColumn1.Name = "walletDestNameDataGridViewTextBoxColumn1";
-            this.walletDestNameDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.walletDestNameDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // walletDataGridViewTextBoxColumn1
-            // 
-            this.walletDataGridViewTextBoxColumn1.DataPropertyName = "Wallet";
-            this.walletDataGridViewTextBoxColumn1.HeaderText = "Wallet";
-            this.walletDataGridViewTextBoxColumn1.Name = "walletDataGridViewTextBoxColumn1";
-            this.walletDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.walletDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // activityContentDataGridViewTextBoxColumn1
-            // 
-            this.activityContentDataGridViewTextBoxColumn1.DataPropertyName = "Activity_Content";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.activityContentDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle12;
-            this.activityContentDataGridViewTextBoxColumn1.HeaderText = "Mô tả";
-            this.activityContentDataGridViewTextBoxColumn1.Name = "activityContentDataGridViewTextBoxColumn1";
-            this.activityContentDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // activityTypeDataGridViewTextBoxColumn1
-            // 
-            this.activityTypeDataGridViewTextBoxColumn1.DataPropertyName = "Activity_Type";
-            this.activityTypeDataGridViewTextBoxColumn1.HeaderText = "Activity_Type";
-            this.activityTypeDataGridViewTextBoxColumn1.Name = "activityTypeDataGridViewTextBoxColumn1";
-            this.activityTypeDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.activityTypeDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // activityStatusDataGridViewTextBoxColumn1
-            // 
-            this.activityStatusDataGridViewTextBoxColumn1.DataPropertyName = "Activity_Status";
-            this.activityStatusDataGridViewTextBoxColumn1.HeaderText = "Activity_Status";
-            this.activityStatusDataGridViewTextBoxColumn1.Name = "activityStatusDataGridViewTextBoxColumn1";
-            this.activityStatusDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.activityStatusDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // amountDataGridViewTextBoxColumn1
-            // 
-            this.amountDataGridViewTextBoxColumn1.DataPropertyName = "Amount";
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.Format = "#,### VND";
-            this.amountDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle13;
-            this.amountDataGridViewTextBoxColumn1.HeaderText = "Số tiền";
-            this.amountDataGridViewTextBoxColumn1.Name = "amountDataGridViewTextBoxColumn1";
-            this.amountDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // createDateDataGridViewTextBoxColumn2
-            // 
-            this.createDateDataGridViewTextBoxColumn2.DataPropertyName = "Create_Date";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.Format = "dd/MM/yyyy";
-            this.createDateDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle15;
-            this.createDateDataGridViewTextBoxColumn2.HeaderText = "Ngày chuyển";
-            this.createDateDataGridViewTextBoxColumn2.Name = "createDateDataGridViewTextBoxColumn2";
-            this.createDateDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.createDateDataGridViewTextBoxColumn2.Width = 112;
-            // 
-            // categoryIDDataGridViewTextBoxColumn2
-            // 
-            this.categoryIDDataGridViewTextBoxColumn2.DataPropertyName = "Category_ID";
-            this.categoryIDDataGridViewTextBoxColumn2.HeaderText = "Category_ID";
-            this.categoryIDDataGridViewTextBoxColumn2.Name = "categoryIDDataGridViewTextBoxColumn2";
-            this.categoryIDDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.categoryIDDataGridViewTextBoxColumn2.Visible = false;
-            this.categoryIDDataGridViewTextBoxColumn2.Width = 108;
-            // 
-            // categoryNameDataGridViewTextBoxColumn2
-            // 
-            this.categoryNameDataGridViewTextBoxColumn2.DataPropertyName = "Category_Name";
-            this.categoryNameDataGridViewTextBoxColumn2.HeaderText = "Category_Name";
-            this.categoryNameDataGridViewTextBoxColumn2.Name = "categoryNameDataGridViewTextBoxColumn2";
-            this.categoryNameDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.categoryNameDataGridViewTextBoxColumn2.Visible = false;
-            this.categoryNameDataGridViewTextBoxColumn2.Width = 132;
-            // 
-            // itemIDDataGridViewTextBoxColumn2
-            // 
-            this.itemIDDataGridViewTextBoxColumn2.DataPropertyName = "Item_ID";
-            this.itemIDDataGridViewTextBoxColumn2.HeaderText = "Item_ID";
-            this.itemIDDataGridViewTextBoxColumn2.Name = "itemIDDataGridViewTextBoxColumn2";
-            this.itemIDDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.itemIDDataGridViewTextBoxColumn2.Visible = false;
-            this.itemIDDataGridViewTextBoxColumn2.Width = 78;
-            // 
-            // itemNameDataGridViewTextBoxColumn2
-            // 
-            this.itemNameDataGridViewTextBoxColumn2.DataPropertyName = "Item_Name";
-            this.itemNameDataGridViewTextBoxColumn2.HeaderText = "Item_Name";
-            this.itemNameDataGridViewTextBoxColumn2.Name = "itemNameDataGridViewTextBoxColumn2";
-            this.itemNameDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.itemNameDataGridViewTextBoxColumn2.Visible = false;
-            this.itemNameDataGridViewTextBoxColumn2.Width = 102;
-            // 
-            // walletDestIDDataGridViewTextBoxColumn2
-            // 
-            this.walletDestIDDataGridViewTextBoxColumn2.DataPropertyName = "WalletDestID";
-            this.walletDestIDDataGridViewTextBoxColumn2.HeaderText = "WalletDestID";
-            this.walletDestIDDataGridViewTextBoxColumn2.Name = "walletDestIDDataGridViewTextBoxColumn2";
-            this.walletDestIDDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.walletDestIDDataGridViewTextBoxColumn2.Visible = false;
-            this.walletDestIDDataGridViewTextBoxColumn2.Width = 112;
-            // 
-            // walletDestNameDataGridViewTextBoxColumn2
-            // 
-            this.walletDestNameDataGridViewTextBoxColumn2.DataPropertyName = "WalletDestName";
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.walletDestNameDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle16;
-            this.walletDestNameDataGridViewTextBoxColumn2.HeaderText = "Ví nhận";
-            this.walletDestNameDataGridViewTextBoxColumn2.Name = "walletDestNameDataGridViewTextBoxColumn2";
-            this.walletDestNameDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.walletDestNameDataGridViewTextBoxColumn2.Width = 77;
-            // 
-            // walletDataGridViewTextBoxColumn2
-            // 
-            this.walletDataGridViewTextBoxColumn2.DataPropertyName = "Wallet";
-            this.walletDataGridViewTextBoxColumn2.HeaderText = "Wallet";
-            this.walletDataGridViewTextBoxColumn2.Name = "walletDataGridViewTextBoxColumn2";
-            this.walletDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.walletDataGridViewTextBoxColumn2.Visible = false;
-            this.walletDataGridViewTextBoxColumn2.Width = 71;
-            // 
-            // activityContentDataGridViewTextBoxColumn2
-            // 
-            this.activityContentDataGridViewTextBoxColumn2.DataPropertyName = "Activity_Content";
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.activityContentDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle17;
-            this.activityContentDataGridViewTextBoxColumn2.HeaderText = "Mô tả";
-            this.activityContentDataGridViewTextBoxColumn2.Name = "activityContentDataGridViewTextBoxColumn2";
-            this.activityContentDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.activityContentDataGridViewTextBoxColumn2.Width = 66;
-            // 
-            // activityTypeDataGridViewTextBoxColumn2
-            // 
-            this.activityTypeDataGridViewTextBoxColumn2.DataPropertyName = "Activity_Type";
-            this.activityTypeDataGridViewTextBoxColumn2.HeaderText = "Activity_Type";
-            this.activityTypeDataGridViewTextBoxColumn2.Name = "activityTypeDataGridViewTextBoxColumn2";
-            this.activityTypeDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.activityTypeDataGridViewTextBoxColumn2.Visible = false;
-            this.activityTypeDataGridViewTextBoxColumn2.Width = 114;
-            // 
-            // activityStatusDataGridViewTextBoxColumn2
-            // 
-            this.activityStatusDataGridViewTextBoxColumn2.DataPropertyName = "Activity_Status";
-            this.activityStatusDataGridViewTextBoxColumn2.HeaderText = "Activity_Status";
-            this.activityStatusDataGridViewTextBoxColumn2.Name = "activityStatusDataGridViewTextBoxColumn2";
-            this.activityStatusDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.activityStatusDataGridViewTextBoxColumn2.Visible = false;
-            this.activityStatusDataGridViewTextBoxColumn2.Width = 119;
-            // 
-            // amountDataGridViewTextBoxColumn2
-            // 
-            this.amountDataGridViewTextBoxColumn2.DataPropertyName = "Amount";
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.Format = "#,### VND";
-            this.amountDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle18;
-            this.amountDataGridViewTextBoxColumn2.HeaderText = "Số tiền";
-            this.amountDataGridViewTextBoxColumn2.Name = "amountDataGridViewTextBoxColumn2";
-            this.amountDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.amountDataGridViewTextBoxColumn2.Width = 74;
-            // 
-            // userNameDataGridViewTextBoxColumn
-            // 
-            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "UserName";
-            this.userNameDataGridViewTextBoxColumn.HeaderText = "UserName";
-            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
-            this.userNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.userNameDataGridViewTextBoxColumn.Visible = false;
-            this.userNameDataGridViewTextBoxColumn.Width = 99;
             // 
             // panelTitleListWallet
             // 
@@ -1415,13 +1415,20 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý ví tiền";
+            this.Shown += new System.EventHandler(this.frmWalletManagement_Shown);
             this.layout1.ResumeLayout(false);
             this.layout1_1.ResumeLayout(false);
             this.layout1_2.ResumeLayout(false);
             this.layout1_2_1.ResumeLayout(false);
             this.layout1_2_1_1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvWithDraw)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vActivityBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.financeManagement)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDeposit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vActivityBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTransfer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vActivityBindingSource2)).EndInit();
             this.layout1_2_1_2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -1431,12 +1438,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTransfer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vActivityBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.financeManagement)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vActivityBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vActivityBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }

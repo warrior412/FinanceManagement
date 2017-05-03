@@ -33,13 +33,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.customTitlePanel2 = new FinanceManagement.Custom.CustomTitlePanel();
             this.btnAddItem = new System.Windows.Forms.Button();
             this.dvItem = new System.Windows.Forms.DataGridView();
+            this.itemIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mItemBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.financeManagement = new FinanceManagement.DataSet.FinanceManagement();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -49,15 +54,10 @@
             this.categoryDescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mCategoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.customTitlePanel1 = new FinanceManagement.Custom.CustomTitlePanel();
             this.btnAddCategory = new System.Windows.Forms.Button();
             this.m_CategoryTableAdapter1 = new FinanceManagement.DataSet.FinanceManagementTableAdapters.M_CategoryTableAdapter();
             this.m_ItemTableAdapter1 = new FinanceManagement.DataSet.FinanceManagementTableAdapters.M_ItemTableAdapter();
-            this.itemIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customTitlePanel2 = new FinanceManagement.Custom.CustomTitlePanel();
-            this.customTitlePanel1 = new FinanceManagement.Custom.CustomTitlePanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvItem)).BeginInit();
@@ -99,6 +99,16 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(235, 450);
             this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // customTitlePanel2
+            // 
+            this.customTitlePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customTitlePanel2.Location = new System.Drawing.Point(3, 3);
+            this.customTitlePanel2.Name = "customTitlePanel2";
+            this.customTitlePanel2.Size = new System.Drawing.Size(229, 24);
+            this.customTitlePanel2.TabIndex = 0;
+            this.customTitlePanel2.Title = "Danh sách mục chi tiêu";
+            this.customTitlePanel2.Type = FinanceManagement.Custom.CustomTitlePanelType.Default;
             // 
             // btnAddItem
             // 
@@ -160,6 +170,39 @@
             this.dvItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dvItem.Size = new System.Drawing.Size(229, 384);
             this.dvItem.TabIndex = 2;
+            // 
+            // itemIDDataGridViewTextBoxColumn
+            // 
+            this.itemIDDataGridViewTextBoxColumn.DataPropertyName = "Item_ID";
+            this.itemIDDataGridViewTextBoxColumn.HeaderText = "Item_ID";
+            this.itemIDDataGridViewTextBoxColumn.Name = "itemIDDataGridViewTextBoxColumn";
+            this.itemIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.itemIDDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // itemNameDataGridViewTextBoxColumn
+            // 
+            this.itemNameDataGridViewTextBoxColumn.DataPropertyName = "Item_Name";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.itemNameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            this.itemNameDataGridViewTextBoxColumn.HeaderText = "Tên mục chi tiêu";
+            this.itemNameDataGridViewTextBoxColumn.Name = "itemNameDataGridViewTextBoxColumn";
+            this.itemNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // categoryDataGridViewTextBoxColumn
+            // 
+            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "Category";
+            this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
+            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
+            this.categoryDataGridViewTextBoxColumn.ReadOnly = true;
+            this.categoryDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // itemStatusDataGridViewTextBoxColumn
+            // 
+            this.itemStatusDataGridViewTextBoxColumn.DataPropertyName = "Item_Status";
+            this.itemStatusDataGridViewTextBoxColumn.HeaderText = "Item_Status";
+            this.itemStatusDataGridViewTextBoxColumn.Name = "itemStatusDataGridViewTextBoxColumn";
+            this.itemStatusDataGridViewTextBoxColumn.ReadOnly = true;
+            this.itemStatusDataGridViewTextBoxColumn.Visible = false;
             // 
             // mItemBindingSource
             // 
@@ -228,6 +271,7 @@
             this.dvCategory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dvCategory.Size = new System.Drawing.Size(434, 384);
             this.dvCategory.TabIndex = 0;
+            this.dvCategory.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dvCategory_MouseClick);
             // 
             // categoryIDDataGridViewTextBoxColumn
             // 
@@ -267,6 +311,16 @@
             this.mCategoryBindingSource.DataMember = "M_Category";
             this.mCategoryBindingSource.DataSource = this.financeManagement;
             // 
+            // customTitlePanel1
+            // 
+            this.customTitlePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customTitlePanel1.Location = new System.Drawing.Point(3, 3);
+            this.customTitlePanel1.Name = "customTitlePanel1";
+            this.customTitlePanel1.Size = new System.Drawing.Size(434, 24);
+            this.customTitlePanel1.TabIndex = 1;
+            this.customTitlePanel1.Title = "Danh sách loại hình chi tiêu";
+            this.customTitlePanel1.Type = FinanceManagement.Custom.CustomTitlePanelType.Default;
+            // 
             // btnAddCategory
             // 
             this.btnAddCategory.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -285,59 +339,6 @@
             // m_ItemTableAdapter1
             // 
             this.m_ItemTableAdapter1.ClearBeforeFill = true;
-            // 
-            // itemIDDataGridViewTextBoxColumn
-            // 
-            this.itemIDDataGridViewTextBoxColumn.DataPropertyName = "Item_ID";
-            this.itemIDDataGridViewTextBoxColumn.HeaderText = "Item_ID";
-            this.itemIDDataGridViewTextBoxColumn.Name = "itemIDDataGridViewTextBoxColumn";
-            this.itemIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.itemIDDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // itemNameDataGridViewTextBoxColumn
-            // 
-            this.itemNameDataGridViewTextBoxColumn.DataPropertyName = "Item_Name";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.itemNameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
-            this.itemNameDataGridViewTextBoxColumn.HeaderText = "Tên mục chi tiêu";
-            this.itemNameDataGridViewTextBoxColumn.Name = "itemNameDataGridViewTextBoxColumn";
-            this.itemNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // categoryDataGridViewTextBoxColumn
-            // 
-            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "Category";
-            this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
-            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
-            this.categoryDataGridViewTextBoxColumn.ReadOnly = true;
-            this.categoryDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // itemStatusDataGridViewTextBoxColumn
-            // 
-            this.itemStatusDataGridViewTextBoxColumn.DataPropertyName = "Item_Status";
-            this.itemStatusDataGridViewTextBoxColumn.HeaderText = "Item_Status";
-            this.itemStatusDataGridViewTextBoxColumn.Name = "itemStatusDataGridViewTextBoxColumn";
-            this.itemStatusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.itemStatusDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // customTitlePanel2
-            // 
-            this.customTitlePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customTitlePanel2.Location = new System.Drawing.Point(3, 3);
-            this.customTitlePanel2.Name = "customTitlePanel2";
-            this.customTitlePanel2.Size = new System.Drawing.Size(229, 24);
-            this.customTitlePanel2.TabIndex = 0;
-            this.customTitlePanel2.Title = "Danh sách mục chi tiêu";
-            this.customTitlePanel2.Type = FinanceManagement.Custom.CustomTitlePanelType.Default;
-            // 
-            // customTitlePanel1
-            // 
-            this.customTitlePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customTitlePanel1.Location = new System.Drawing.Point(3, 3);
-            this.customTitlePanel1.Name = "customTitlePanel1";
-            this.customTitlePanel1.Size = new System.Drawing.Size(434, 24);
-            this.customTitlePanel1.TabIndex = 1;
-            this.customTitlePanel1.Title = "Danh sách loại hình chi tiêu";
-            this.customTitlePanel1.Type = FinanceManagement.Custom.CustomTitlePanelType.Default;
             // 
             // frmItemManagement
             // 

@@ -12,24 +12,6 @@ D:\JunF\Projects\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement
 D:\JunF\Projects\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmWalletInfo.resources
 D:\JunF\Projects\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmLogin.resources
 D:\JunF\Projects\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.csprojResolveAssemblyReference.cache
-D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmLogin.resources
-D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.Custom.CustomListViewItem.resources
-D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.Custom.CustomTitlePanel.resources
-D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmActivityManagement.resources
-D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmCategoryInfo.resources
-D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmItemInfo.resources
-D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmItemManagement.resources
-D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmWalletInfo.resources
-D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmWalletManagement.resources
-D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.Main.resources
-D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.Properties.Resources.resources
-D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.csproj.GenerateResource.Cache
-D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\bin\Debug\FinanceManagement.exe.config
-D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\bin\Debug\FinanceManagement.exe
-D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\bin\Debug\FinanceManagement.pdb
-D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.csprojResolveAssemblyReference.cache
-D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.exe
-D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.pdb
 C:\JunF's Drive\GitHub\FinanceManagement\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.Custom.CustomListViewItem.resources
 C:\JunF's Drive\GitHub\FinanceManagement\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.Custom.CustomTitlePanel.resources
 C:\JunF's Drive\GitHub\FinanceManagement\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmActivityManagement.resources
@@ -48,3 +30,22 @@ C:\JunF's Drive\GitHub\FinanceManagement\WinApp\FinanceManagement\FinanceManagem
 C:\JunF's Drive\GitHub\FinanceManagement\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.exe
 C:\JunF's Drive\GitHub\FinanceManagement\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.pdb
 C:\JunF's Drive\GitHub\FinanceManagement\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.csprojResolveAssemblyReference.cache
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\bin\Debug\FinanceManagement.exe.config
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\bin\Debug\FinanceManagement.exe
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\bin\Debug\FinanceManagement.pdb
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.Custom.CustomListViewItem.resources
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.Custom.CustomProgressBar.resources
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.Custom.CustomTitlePanel.resources
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmActivityManagement.resources
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmCategoryInfo.resources
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmItemInfo.resources
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmItemManagement.resources
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmLogin.resources
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmWalletInfo.resources
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.frmWalletManagement.resources
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.Main.resources
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.Properties.Resources.resources
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.csproj.GenerateResource.Cache
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.exe
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.pdb
+D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.csprojResolveAssemblyReference.cache

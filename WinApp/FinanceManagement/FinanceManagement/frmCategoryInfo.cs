@@ -26,7 +26,9 @@ namespace FinanceManagement
                 }
                 else
                 {
-
+                    lblStatus.Text = "Đang hoạt động";
+                    txtCategoryName.Text = selectedCategory.Category_Name;
+                    txtDescription.Text = selectedCategory.Category_Description;
                 }
             }
         }
@@ -44,7 +46,7 @@ namespace FinanceManagement
             }
             else
             {
-                m_CategoryTableAdapter1.Category_Update(txtCategoryName.Text,txtDescription.Text,SelectedCategory.Category_Status);
+                m_CategoryTableAdapter1.Category_Update(selectedCategory.Category_ID, txtCategoryName.Text,txtDescription.Text,SelectedCategory.Category_Status);
             }
             DialogResult = DialogResult.OK;
         }

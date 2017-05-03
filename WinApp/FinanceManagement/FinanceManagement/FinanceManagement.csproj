@@ -53,6 +53,12 @@
     <Compile Include="Custom\CustomListViewItem.Designer.cs">
       <DependentUpon>CustomListViewItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Custom\CustomProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custom\CustomProgressBar.Designer.cs">
+      <DependentUpon>CustomProgressBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom\CustomTitlePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Custom\CustomListViewItem.resx">
       <DependentUpon>CustomListViewItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom\CustomProgressBar.resx">
+      <DependentUpon>CustomProgressBar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom\CustomTitlePanel.resx">
       <DependentUpon>CustomTitlePanel.cs</DependentUpon>
@@ -184,7 +193,10 @@
   <ItemGroup>
     <None Include="Resources\dollar-folder-icon.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\Loading_icon.gif" />
+    <None Include="Resources\Loading_icon1.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
