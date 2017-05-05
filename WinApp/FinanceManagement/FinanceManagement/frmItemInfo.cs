@@ -37,7 +37,9 @@ namespace FinanceManagement
                     lblStatus.Text = "Tạo mới";
                 }else
                 {
-
+                    lblStatus.Text = "Đang hoạt động";
+                    txtName.Text = currentItem.Item_Name;
+                    
                 }
             }
         }

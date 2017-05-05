@@ -170,6 +170,7 @@
             this.dvItem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dvItem.Size = new System.Drawing.Size(229, 384);
             this.dvItem.TabIndex = 2;
+            this.dvItem.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dvItem_MouseClick);
             // 
             // itemIDDataGridViewTextBoxColumn
             // 

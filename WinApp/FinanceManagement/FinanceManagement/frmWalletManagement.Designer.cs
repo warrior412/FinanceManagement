@@ -29,32 +29,36 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle67 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle76 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle73 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle74 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle75 = new System.Windows.Forms.DataGridViewCellStyle();
             this.layout1 = new System.Windows.Forms.TableLayoutPanel();
             this.layout1_1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnAddNewWallet = new System.Windows.Forms.Button();
             this.lvWallet = new System.Windows.Forms.TableLayoutPanel();
+            this.panelTitleListWallet = new FinanceManagement.Custom.CustomTitlePanel();
             this.layout1_2 = new System.Windows.Forms.TableLayoutPanel();
+            this.panelTitleWalletInfo = new FinanceManagement.Custom.CustomTitlePanel();
             this.layout1_2_1 = new System.Windows.Forms.TableLayoutPanel();
             this.layout1_2_1_1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panelTitleWithdraw = new FinanceManagement.Custom.CustomTitlePanel();
+            this.panelTitleDeposit = new FinanceManagement.Custom.CustomTitlePanel();
             this.dgvWithDraw = new System.Windows.Forms.DataGridView();
             this.createDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -101,6 +105,9 @@
             this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vActivityBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.layout1_2_1_2 = new System.Windows.Forms.TableLayoutPanel();
+            this.panelTitleSearch = new FinanceManagement.Custom.CustomTitlePanel();
+            this.panelTitlePrint = new FinanceManagement.Custom.CustomTitlePanel();
+            this.panelTitleSummary = new FinanceManagement.Custom.CustomTitlePanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -139,13 +146,7 @@
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.m_WalletTableAdapter1 = new FinanceManagement.DataSet.FinanceManagementTableAdapters.M_WalletTableAdapter();
             this.v_ActivityTableAdapter1 = new FinanceManagement.DataSet.FinanceManagementTableAdapters.v_ActivityTableAdapter();
-            this.panelTitleListWallet = new FinanceManagement.Custom.CustomTitlePanel();
-            this.panelTitleWalletInfo = new FinanceManagement.Custom.CustomTitlePanel();
-            this.panelTitleWithdraw = new FinanceManagement.Custom.CustomTitlePanel();
-            this.panelTitleDeposit = new FinanceManagement.Custom.CustomTitlePanel();
-            this.panelTitleSearch = new FinanceManagement.Custom.CustomTitlePanel();
-            this.panelTitlePrint = new FinanceManagement.Custom.CustomTitlePanel();
-            this.panelTitleSummary = new FinanceManagement.Custom.CustomTitlePanel();
+            this.t_ActivityTableAdapter1 = new FinanceManagement.DataSet.FinanceManagementTableAdapters.T_ActivityTableAdapter();
             this.customTitlePanel5 = new FinanceManagement.Custom.CustomTitlePanel();
             this.customTitlePanel1 = new FinanceManagement.Custom.CustomTitlePanel();
             this.customTitlePanel2 = new FinanceManagement.Custom.CustomTitlePanel();
@@ -177,7 +178,7 @@
             // layout1
             // 
             this.layout1.ColumnCount = 2;
-            this.layout1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
+            this.layout1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 235F));
             this.layout1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.layout1.Controls.Add(this.layout1_1, 0, 0);
             this.layout1.Controls.Add(this.layout1_2, 1, 0);
@@ -206,7 +207,7 @@
             this.layout1_1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.layout1_1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.layout1_1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.layout1_1.Size = new System.Drawing.Size(300, 621);
+            this.layout1_1.Size = new System.Drawing.Size(235, 621);
             this.layout1_1.TabIndex = 2;
             // 
             // btnAddNewWallet
@@ -220,7 +221,7 @@
             this.btnAddNewWallet.Location = new System.Drawing.Point(12, 582);
             this.btnAddNewWallet.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
             this.btnAddNewWallet.Name = "btnAddNewWallet";
-            this.btnAddNewWallet.Size = new System.Drawing.Size(276, 34);
+            this.btnAddNewWallet.Size = new System.Drawing.Size(211, 34);
             this.btnAddNewWallet.TabIndex = 1;
             this.btnAddNewWallet.Text = "Add new wallet";
             this.btnAddNewWallet.UseVisualStyleBackColor = false;
@@ -229,16 +230,29 @@
             // lvWallet
             // 
             this.lvWallet.AutoScroll = true;
+            this.lvWallet.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.lvWallet.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Outset;
             this.lvWallet.ColumnCount = 1;
             this.lvWallet.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.lvWallet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lvWallet.Location = new System.Drawing.Point(5, 32);
+            this.lvWallet.Location = new System.Drawing.Point(2, 29);
+            this.lvWallet.Margin = new System.Windows.Forms.Padding(0);
             this.lvWallet.Name = "lvWallet";
             this.lvWallet.RowCount = 1;
             this.lvWallet.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.lvWallet.Size = new System.Drawing.Size(290, 542);
+            this.lvWallet.Size = new System.Drawing.Size(231, 548);
             this.lvWallet.TabIndex = 0;
+            // 
+            // panelTitleListWallet
+            // 
+            this.panelTitleListWallet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelTitleListWallet.Location = new System.Drawing.Point(2, 2);
+            this.panelTitleListWallet.Margin = new System.Windows.Forms.Padding(0);
+            this.panelTitleListWallet.Name = "panelTitleListWallet";
+            this.panelTitleListWallet.Size = new System.Drawing.Size(231, 25);
+            this.panelTitleListWallet.TabIndex = 2;
+            this.panelTitleListWallet.Title = "Danh sách ví";
+            this.panelTitleListWallet.Type = FinanceManagement.Custom.CustomTitlePanelType.MainTitle;
             // 
             // layout1_2
             // 
@@ -248,20 +262,31 @@
             this.layout1_2.Controls.Add(this.panelTitleWalletInfo, 0, 0);
             this.layout1_2.Controls.Add(this.layout1_2_1, 0, 1);
             this.layout1_2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layout1_2.Location = new System.Drawing.Point(300, 0);
+            this.layout1_2.Location = new System.Drawing.Point(235, 0);
             this.layout1_2.Margin = new System.Windows.Forms.Padding(0);
             this.layout1_2.Name = "layout1_2";
             this.layout1_2.RowCount = 2;
             this.layout1_2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.layout1_2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.layout1_2.Size = new System.Drawing.Size(1070, 621);
+            this.layout1_2.Size = new System.Drawing.Size(1135, 621);
             this.layout1_2.TabIndex = 3;
+            // 
+            // panelTitleWalletInfo
+            // 
+            this.panelTitleWalletInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelTitleWalletInfo.Location = new System.Drawing.Point(2, 2);
+            this.panelTitleWalletInfo.Margin = new System.Windows.Forms.Padding(0);
+            this.panelTitleWalletInfo.Name = "panelTitleWalletInfo";
+            this.panelTitleWalletInfo.Size = new System.Drawing.Size(1131, 25);
+            this.panelTitleWalletInfo.TabIndex = 0;
+            this.panelTitleWalletInfo.Title = "Thông tin ví";
+            this.panelTitleWalletInfo.Type = FinanceManagement.Custom.CustomTitlePanelType.MainTitle;
             // 
             // layout1_2_1
             // 
             this.layout1_2_1.ColumnCount = 2;
             this.layout1_2_1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.layout1_2_1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
+            this.layout1_2_1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250F));
             this.layout1_2_1.Controls.Add(this.layout1_2_1_1, 0, 0);
             this.layout1_2_1.Controls.Add(this.layout1_2_1_2, 1, 0);
             this.layout1_2_1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -270,7 +295,7 @@
             this.layout1_2_1.Name = "layout1_2_1";
             this.layout1_2_1.RowCount = 1;
             this.layout1_2_1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.layout1_2_1.Size = new System.Drawing.Size(1066, 590);
+            this.layout1_2_1.Size = new System.Drawing.Size(1131, 590);
             this.layout1_2_1.TabIndex = 1;
             // 
             // layout1_2_1_1
@@ -291,8 +316,30 @@
             this.layout1_2_1_1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.layout1_2_1_1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.layout1_2_1_1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.layout1_2_1_1.Size = new System.Drawing.Size(766, 590);
+            this.layout1_2_1_1.Size = new System.Drawing.Size(881, 590);
             this.layout1_2_1_1.TabIndex = 0;
+            // 
+            // panelTitleWithdraw
+            // 
+            this.panelTitleWithdraw.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelTitleWithdraw.Location = new System.Drawing.Point(2, 2);
+            this.panelTitleWithdraw.Margin = new System.Windows.Forms.Padding(0);
+            this.panelTitleWithdraw.Name = "panelTitleWithdraw";
+            this.panelTitleWithdraw.Size = new System.Drawing.Size(877, 20);
+            this.panelTitleWithdraw.TabIndex = 0;
+            this.panelTitleWithdraw.Title = "Danh sách mục chi";
+            this.panelTitleWithdraw.Type = FinanceManagement.Custom.CustomTitlePanelType.SubTitle;
+            // 
+            // panelTitleDeposit
+            // 
+            this.panelTitleDeposit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelTitleDeposit.Location = new System.Drawing.Point(2, 296);
+            this.panelTitleDeposit.Margin = new System.Windows.Forms.Padding(0);
+            this.panelTitleDeposit.Name = "panelTitleDeposit";
+            this.panelTitleDeposit.Size = new System.Drawing.Size(877, 20);
+            this.panelTitleDeposit.TabIndex = 1;
+            this.panelTitleDeposit.Title = "Danh sách mục thu và Chuyển khoản";
+            this.panelTitleDeposit.Type = FinanceManagement.Custom.CustomTitlePanelType.SubTitle;
             // 
             // dgvWithDraw
             // 
@@ -300,14 +347,14 @@
             this.dgvWithDraw.AllowUserToDeleteRows = false;
             this.dgvWithDraw.AutoGenerateColumns = false;
             this.dgvWithDraw.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvWithDraw.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle58.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle58.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle58.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle58.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle58.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle58.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvWithDraw.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle58;
             this.dgvWithDraw.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvWithDraw.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.createDateDataGridViewTextBoxColumn,
@@ -323,44 +370,45 @@
             this.activityStatusDataGridViewTextBoxColumn,
             this.amountDataGridViewTextBoxColumn});
             this.dgvWithDraw.DataSource = this.vActivityBindingSource;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvWithDraw.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle64.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle64.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle64.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle64.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle64.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle64.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvWithDraw.DefaultCellStyle = dataGridViewCellStyle64;
             this.dgvWithDraw.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvWithDraw.Location = new System.Drawing.Point(5, 27);
             this.dgvWithDraw.MultiSelect = false;
             this.dgvWithDraw.Name = "dgvWithDraw";
             this.dgvWithDraw.ReadOnly = true;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvWithDraw.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvWithDraw.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle65.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle65.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle65.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle65.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle65.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle65.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvWithDraw.RowHeadersDefaultCellStyle = dataGridViewCellStyle65;
+            dataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle66.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvWithDraw.RowsDefaultCellStyle = dataGridViewCellStyle66;
             this.dgvWithDraw.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvWithDraw.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvWithDraw.RowTemplate.Height = 25;
             this.dgvWithDraw.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvWithDraw.Size = new System.Drawing.Size(756, 264);
+            this.dgvWithDraw.Size = new System.Drawing.Size(871, 264);
             this.dgvWithDraw.TabIndex = 2;
+            this.dgvWithDraw.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgvWithDraw_MouseClick);
             // 
             // createDateDataGridViewTextBoxColumn
             // 
             this.createDateDataGridViewTextBoxColumn.DataPropertyName = "Create_Date";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.Format = "dd/MM/yyyy";
-            this.createDateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle59.Format = "dd/MM/yyyy";
+            this.createDateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle59;
             this.createDateDataGridViewTextBoxColumn.HeaderText = "Ngày nhập";
             this.createDateDataGridViewTextBoxColumn.Name = "createDateDataGridViewTextBoxColumn";
             this.createDateDataGridViewTextBoxColumn.ReadOnly = true;
@@ -376,9 +424,9 @@
             // categoryNameDataGridViewTextBoxColumn
             // 
             this.categoryNameDataGridViewTextBoxColumn.DataPropertyName = "Category_Name";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.categoryNameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle60.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle60.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoryNameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle60;
             this.categoryNameDataGridViewTextBoxColumn.HeaderText = "Danh mục";
             this.categoryNameDataGridViewTextBoxColumn.Name = "categoryNameDataGridViewTextBoxColumn";
             this.categoryNameDataGridViewTextBoxColumn.ReadOnly = true;
@@ -394,9 +442,9 @@
             // itemNameDataGridViewTextBoxColumn
             // 
             this.itemNameDataGridViewTextBoxColumn.DataPropertyName = "Item_Name";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemNameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle61.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle61.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemNameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle61;
             this.itemNameDataGridViewTextBoxColumn.HeaderText = "Mục chi";
             this.itemNameDataGridViewTextBoxColumn.Name = "itemNameDataGridViewTextBoxColumn";
             this.itemNameDataGridViewTextBoxColumn.ReadOnly = true;
@@ -428,9 +476,9 @@
             // activityContentDataGridViewTextBoxColumn
             // 
             this.activityContentDataGridViewTextBoxColumn.DataPropertyName = "Activity_Content";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.activityContentDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle62.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle62.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.activityContentDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle62;
             this.activityContentDataGridViewTextBoxColumn.HeaderText = "Mô tả";
             this.activityContentDataGridViewTextBoxColumn.Name = "activityContentDataGridViewTextBoxColumn";
             this.activityContentDataGridViewTextBoxColumn.ReadOnly = true;
@@ -454,10 +502,10 @@
             // amountDataGridViewTextBoxColumn
             // 
             this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.Format = "#,### VND";
-            this.amountDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle63.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle63.Format = "#,### VND";
+            this.amountDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle63;
             this.amountDataGridViewTextBoxColumn.HeaderText = "Số tiền";
             this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
             this.amountDataGridViewTextBoxColumn.ReadOnly = true;
@@ -484,7 +532,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(756, 264);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(871, 264);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // dgvDeposit
@@ -493,14 +541,14 @@
             this.dgvDeposit.AllowUserToDeleteRows = false;
             this.dgvDeposit.AutoGenerateColumns = false;
             this.dgvDeposit.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDeposit.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle67.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle67.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle67.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle67.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle67.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle67.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle67.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDeposit.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle67;
             this.dgvDeposit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDeposit.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.createDateDataGridViewTextBoxColumn1,
@@ -524,16 +572,17 @@
             this.dgvDeposit.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvDeposit.RowTemplate.Height = 25;
             this.dgvDeposit.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDeposit.Size = new System.Drawing.Size(372, 258);
+            this.dgvDeposit.Size = new System.Drawing.Size(429, 258);
             this.dgvDeposit.TabIndex = 3;
+            this.dgvDeposit.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgvDeposit_MouseClick);
             // 
             // createDateDataGridViewTextBoxColumn1
             // 
             this.createDateDataGridViewTextBoxColumn1.DataPropertyName = "Create_Date";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.Format = "dd/MM/yyyy";
-            this.createDateDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle68.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle68.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle68.Format = "dd/MM/yyyy";
+            this.createDateDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle68;
             this.createDateDataGridViewTextBoxColumn1.HeaderText = "Ngày nhập";
             this.createDateDataGridViewTextBoxColumn1.Name = "createDateDataGridViewTextBoxColumn1";
             this.createDateDataGridViewTextBoxColumn1.ReadOnly = true;
@@ -597,9 +646,9 @@
             // activityContentDataGridViewTextBoxColumn1
             // 
             this.activityContentDataGridViewTextBoxColumn1.DataPropertyName = "Activity_Content";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.activityContentDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle69.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle69.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.activityContentDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle69;
             this.activityContentDataGridViewTextBoxColumn1.HeaderText = "Mô tả";
             this.activityContentDataGridViewTextBoxColumn1.Name = "activityContentDataGridViewTextBoxColumn1";
             this.activityContentDataGridViewTextBoxColumn1.ReadOnly = true;
@@ -623,10 +672,10 @@
             // amountDataGridViewTextBoxColumn1
             // 
             this.amountDataGridViewTextBoxColumn1.DataPropertyName = "Amount";
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.Format = "#,### VND";
-            this.amountDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle70.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle70.Format = "#,### VND";
+            this.amountDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle70;
             this.amountDataGridViewTextBoxColumn1.HeaderText = "Số tiền";
             this.amountDataGridViewTextBoxColumn1.Name = "amountDataGridViewTextBoxColumn1";
             this.amountDataGridViewTextBoxColumn1.ReadOnly = true;
@@ -642,14 +691,14 @@
             this.dgvTransfer.AllowUserToDeleteRows = false;
             this.dgvTransfer.AutoGenerateColumns = false;
             this.dgvTransfer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTransfer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle71.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle71.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle71.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle71.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle71.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle71.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle71.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTransfer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle71;
             this.dgvTransfer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTransfer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.createDateDataGridViewTextBoxColumn2,
@@ -667,31 +716,32 @@
             this.userNameDataGridViewTextBoxColumn});
             this.dgvTransfer.DataSource = this.vActivityBindingSource2;
             this.dgvTransfer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvTransfer.Location = new System.Drawing.Point(381, 3);
+            this.dgvTransfer.Location = new System.Drawing.Point(438, 3);
             this.dgvTransfer.Name = "dgvTransfer";
             this.dgvTransfer.ReadOnly = true;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTransfer.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle76.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle76.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle76.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle76.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle76.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle76.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle76.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTransfer.RowHeadersDefaultCellStyle = dataGridViewCellStyle76;
             this.dgvTransfer.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvTransfer.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvTransfer.RowTemplate.Height = 25;
             this.dgvTransfer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTransfer.Size = new System.Drawing.Size(372, 258);
+            this.dgvTransfer.Size = new System.Drawing.Size(430, 258);
             this.dgvTransfer.TabIndex = 4;
+            this.dgvTransfer.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgvTransfer_MouseClick);
             // 
             // createDateDataGridViewTextBoxColumn2
             // 
             this.createDateDataGridViewTextBoxColumn2.DataPropertyName = "Create_Date";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.Format = "dd/MM/yyyy";
-            this.createDateDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle72.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle72.Format = "dd/MM/yyyy";
+            this.createDateDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle72;
             this.createDateDataGridViewTextBoxColumn2.HeaderText = "Ngày chuyển";
             this.createDateDataGridViewTextBoxColumn2.Name = "createDateDataGridViewTextBoxColumn2";
             this.createDateDataGridViewTextBoxColumn2.ReadOnly = true;
@@ -745,9 +795,9 @@
             // walletDestNameDataGridViewTextBoxColumn2
             // 
             this.walletDestNameDataGridViewTextBoxColumn2.DataPropertyName = "WalletDestName";
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.walletDestNameDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle73.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle73.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.walletDestNameDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle73;
             this.walletDestNameDataGridViewTextBoxColumn2.HeaderText = "Ví nhận";
             this.walletDestNameDataGridViewTextBoxColumn2.Name = "walletDestNameDataGridViewTextBoxColumn2";
             this.walletDestNameDataGridViewTextBoxColumn2.ReadOnly = true;
@@ -765,9 +815,9 @@
             // activityContentDataGridViewTextBoxColumn2
             // 
             this.activityContentDataGridViewTextBoxColumn2.DataPropertyName = "Activity_Content";
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.activityContentDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle74.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle74.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.activityContentDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle74;
             this.activityContentDataGridViewTextBoxColumn2.HeaderText = "Mô tả";
             this.activityContentDataGridViewTextBoxColumn2.Name = "activityContentDataGridViewTextBoxColumn2";
             this.activityContentDataGridViewTextBoxColumn2.ReadOnly = true;
@@ -794,10 +844,10 @@
             // amountDataGridViewTextBoxColumn2
             // 
             this.amountDataGridViewTextBoxColumn2.DataPropertyName = "Amount";
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.Format = "#,### VND";
-            this.amountDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle75.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle75.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle75.Format = "#,### VND";
+            this.amountDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle75;
             this.amountDataGridViewTextBoxColumn2.HeaderText = "Số tiền";
             this.amountDataGridViewTextBoxColumn2.Name = "amountDataGridViewTextBoxColumn2";
             this.amountDataGridViewTextBoxColumn2.ReadOnly = true;
@@ -829,7 +879,7 @@
             this.layout1_2_1_2.Controls.Add(this.layoutSummary, 0, 5);
             this.layout1_2_1_2.Controls.Add(this.panel2, 0, 3);
             this.layout1_2_1_2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layout1_2_1_2.Location = new System.Drawing.Point(766, 0);
+            this.layout1_2_1_2.Location = new System.Drawing.Point(881, 0);
             this.layout1_2_1_2.Margin = new System.Windows.Forms.Padding(0);
             this.layout1_2_1_2.Name = "layout1_2_1_2";
             this.layout1_2_1_2.RowCount = 6;
@@ -839,8 +889,41 @@
             this.layout1_2_1_2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.27273F));
             this.layout1_2_1_2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.layout1_2_1_2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.90909F));
-            this.layout1_2_1_2.Size = new System.Drawing.Size(300, 590);
+            this.layout1_2_1_2.Size = new System.Drawing.Size(250, 590);
             this.layout1_2_1_2.TabIndex = 1;
+            // 
+            // panelTitleSearch
+            // 
+            this.panelTitleSearch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelTitleSearch.Location = new System.Drawing.Point(2, 2);
+            this.panelTitleSearch.Margin = new System.Windows.Forms.Padding(0);
+            this.panelTitleSearch.Name = "panelTitleSearch";
+            this.panelTitleSearch.Size = new System.Drawing.Size(246, 20);
+            this.panelTitleSearch.TabIndex = 0;
+            this.panelTitleSearch.Title = "Tra cứu thu chi";
+            this.panelTitleSearch.Type = FinanceManagement.Custom.CustomTitlePanelType.SubTitle;
+            // 
+            // panelTitlePrint
+            // 
+            this.panelTitlePrint.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelTitlePrint.Location = new System.Drawing.Point(2, 190);
+            this.panelTitlePrint.Margin = new System.Windows.Forms.Padding(0);
+            this.panelTitlePrint.Name = "panelTitlePrint";
+            this.panelTitlePrint.Size = new System.Drawing.Size(246, 20);
+            this.panelTitlePrint.TabIndex = 1;
+            this.panelTitlePrint.Title = "In thông tin thu chi";
+            this.panelTitlePrint.Type = FinanceManagement.Custom.CustomTitlePanelType.SubTitle;
+            // 
+            // panelTitleSummary
+            // 
+            this.panelTitleSummary.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelTitleSummary.Location = new System.Drawing.Point(2, 354);
+            this.panelTitleSummary.Margin = new System.Windows.Forms.Padding(0);
+            this.panelTitleSummary.Name = "panelTitleSummary";
+            this.panelTitleSummary.Size = new System.Drawing.Size(246, 20);
+            this.panelTitleSummary.TabIndex = 2;
+            this.panelTitleSummary.Title = "Thông tin ví";
+            this.panelTitleSummary.Type = FinanceManagement.Custom.CustomTitlePanelType.SummaryTitle;
             // 
             // panel1
             // 
@@ -857,7 +940,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(5, 27);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(290, 158);
+            this.panel1.Size = new System.Drawing.Size(240, 158);
             this.panel1.TabIndex = 3;
             // 
             // groupBox1
@@ -867,15 +950,15 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 113);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(265, 42);
+            this.groupBox1.Size = new System.Drawing.Size(221, 42);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(136, 10);
+            this.button2.Location = new System.Drawing.Point(113, 10);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(123, 29);
+            this.button2.Size = new System.Drawing.Size(102, 29);
             this.button2.TabIndex = 0;
             this.button2.Text = "Nhập lại";
             this.button2.UseVisualStyleBackColor = true;
@@ -884,7 +967,7 @@
             // 
             this.btnSearch.Location = new System.Drawing.Point(7, 10);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(123, 29);
+            this.btnSearch.Size = new System.Drawing.Size(100, 29);
             this.btnSearch.TabIndex = 0;
             this.btnSearch.Text = "Tra cứu";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -892,7 +975,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(189, 93);
+            this.radioButton2.Location = new System.Drawing.Point(170, 93);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(63, 17);
             this.radioButton2.TabIndex = 6;
@@ -903,7 +986,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(107, 93);
+            this.radioButton1.Location = new System.Drawing.Point(88, 93);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(64, 17);
             this.radioButton1.TabIndex = 5;
@@ -923,9 +1006,9 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(93, 62);
+            this.comboBox1.Location = new System.Drawing.Point(90, 62);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(184, 21);
+            this.comboBox1.Size = new System.Drawing.Size(143, 21);
             this.comboBox1.TabIndex = 3;
             // 
             // label3
@@ -940,17 +1023,17 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(93, 34);
+            this.dateTimePicker2.Location = new System.Drawing.Point(90, 36);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(184, 20);
+            this.dateTimePicker2.Size = new System.Drawing.Size(143, 20);
             this.dateTimePicker2.TabIndex = 1;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(93, 7);
+            this.dateTimePicker1.Location = new System.Drawing.Point(90, 7);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(184, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(143, 20);
             this.dateTimePicker1.TabIndex = 1;
             // 
             // label2
@@ -975,8 +1058,8 @@
             // 
             this.layoutSummary.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.layoutSummary.ColumnCount = 2;
-            this.layoutSummary.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.5F));
-            this.layoutSummary.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.5F));
+            this.layoutSummary.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79F));
+            this.layoutSummary.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.layoutSummary.Controls.Add(this.lblSummary_WalletBalance, 1, 4);
             this.layoutSummary.Controls.Add(this.label13, 1, 3);
             this.layoutSummary.Controls.Add(this.label12, 1, 2);
@@ -999,17 +1082,18 @@
             this.layoutSummary.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.layoutSummary.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.layoutSummary.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.layoutSummary.Size = new System.Drawing.Size(296, 212);
+            this.layoutSummary.Size = new System.Drawing.Size(246, 212);
             this.layoutSummary.TabIndex = 4;
             // 
             // lblSummary_WalletBalance
             // 
             this.lblSummary_WalletBalance.AutoSize = true;
             this.lblSummary_WalletBalance.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSummary_WalletBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSummary_WalletBalance.Location = new System.Drawing.Point(115, 138);
+            this.lblSummary_WalletBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSummary_WalletBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblSummary_WalletBalance.Location = new System.Drawing.Point(86, 138);
             this.lblSummary_WalletBalance.Name = "lblSummary_WalletBalance";
-            this.lblSummary_WalletBalance.Size = new System.Drawing.Size(176, 32);
+            this.lblSummary_WalletBalance.Size = new System.Drawing.Size(155, 32);
             this.lblSummary_WalletBalance.TabIndex = 9;
             this.lblSummary_WalletBalance.Text = "10,000,000 VND";
             this.lblSummary_WalletBalance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1018,10 +1102,11 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(115, 104);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Red;
+            this.label13.Location = new System.Drawing.Point(86, 104);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(176, 32);
+            this.label13.Size = new System.Drawing.Size(155, 32);
             this.label13.TabIndex = 8;
             this.label13.Text = "140,000,000 VND";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1030,10 +1115,11 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(115, 70);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Blue;
+            this.label12.Location = new System.Drawing.Point(86, 70);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(176, 32);
+            this.label12.Size = new System.Drawing.Size(155, 32);
             this.label12.TabIndex = 7;
             this.label12.Text = "150,000,000 VND";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1042,10 +1128,10 @@
             // 
             this.lblSummary_WalletCreateDate.AutoSize = true;
             this.lblSummary_WalletCreateDate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSummary_WalletCreateDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSummary_WalletCreateDate.Location = new System.Drawing.Point(115, 36);
+            this.lblSummary_WalletCreateDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSummary_WalletCreateDate.Location = new System.Drawing.Point(86, 36);
             this.lblSummary_WalletCreateDate.Name = "lblSummary_WalletCreateDate";
-            this.lblSummary_WalletCreateDate.Size = new System.Drawing.Size(176, 32);
+            this.lblSummary_WalletCreateDate.Size = new System.Drawing.Size(155, 32);
             this.lblSummary_WalletCreateDate.TabIndex = 6;
             this.lblSummary_WalletCreateDate.Text = "20/10/2008";
             this.lblSummary_WalletCreateDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1054,10 +1140,10 @@
             // 
             this.lblSummary_FullName.AutoSize = true;
             this.lblSummary_FullName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSummary_FullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSummary_FullName.Location = new System.Drawing.Point(115, 2);
+            this.lblSummary_FullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSummary_FullName.Location = new System.Drawing.Point(86, 2);
             this.lblSummary_FullName.Name = "lblSummary_FullName";
-            this.lblSummary_FullName.Size = new System.Drawing.Size(176, 32);
+            this.lblSummary_FullName.Size = new System.Drawing.Size(155, 32);
             this.lblSummary_FullName.TabIndex = 5;
             this.lblSummary_FullName.Text = "Huỳnh Nhật Trung Hiếu";
             this.lblSummary_FullName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1069,7 +1155,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(5, 2);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 32);
+            this.label5.Size = new System.Drawing.Size(73, 32);
             this.label5.TabIndex = 0;
             this.label5.Text = "Chủ ví";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1081,7 +1167,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(5, 36);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 32);
+            this.label6.Size = new System.Drawing.Size(73, 32);
             this.label6.TabIndex = 1;
             this.label6.Text = "Ngày tạo";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1093,7 +1179,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(5, 70);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(102, 32);
+            this.label7.Size = new System.Drawing.Size(73, 32);
             this.label7.TabIndex = 2;
             this.label7.Text = "Tổng thu";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1105,7 +1191,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(5, 104);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(102, 32);
+            this.label8.Size = new System.Drawing.Size(73, 32);
             this.label8.TabIndex = 3;
             this.label8.Text = "Tổng chi";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1117,7 +1203,7 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(5, 138);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(102, 32);
+            this.label9.Size = new System.Drawing.Size(73, 32);
             this.label9.TabIndex = 4;
             this.label9.Text = "Số dư";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1125,9 +1211,9 @@
             // btnPrintWallet
             // 
             this.btnPrintWallet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPrintWallet.Location = new System.Drawing.Point(115, 175);
+            this.btnPrintWallet.Location = new System.Drawing.Point(86, 175);
             this.btnPrintWallet.Name = "btnPrintWallet";
-            this.btnPrintWallet.Size = new System.Drawing.Size(176, 32);
+            this.btnPrintWallet.Size = new System.Drawing.Size(155, 32);
             this.btnPrintWallet.TabIndex = 10;
             this.btnPrintWallet.Text = "In thông tin ví";
             this.btnPrintWallet.UseVisualStyleBackColor = true;
@@ -1145,7 +1231,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(5, 215);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(290, 134);
+            this.panel2.Size = new System.Drawing.Size(240, 134);
             this.panel2.TabIndex = 5;
             // 
             // groupBox2
@@ -1155,15 +1241,15 @@
             this.groupBox2.Location = new System.Drawing.Point(12, 91);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(265, 42);
+            this.groupBox2.Size = new System.Drawing.Size(221, 42);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(136, 10);
+            this.button1.Location = new System.Drawing.Point(112, 10);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 29);
+            this.button1.Size = new System.Drawing.Size(103, 29);
             this.button1.TabIndex = 0;
             this.button1.Text = "Nhập lại";
             this.button1.UseVisualStyleBackColor = true;
@@ -1172,7 +1258,7 @@
             // 
             this.button3.Location = new System.Drawing.Point(7, 10);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(123, 29);
+            this.button3.Size = new System.Drawing.Size(100, 29);
             this.button3.TabIndex = 0;
             this.button3.Text = "In thống kê";
             this.button3.UseVisualStyleBackColor = true;
@@ -1180,7 +1266,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(188, 77);
+            this.checkBox2.Location = new System.Drawing.Point(169, 74);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(64, 17);
             this.checkBox2.TabIndex = 3;
@@ -1190,7 +1276,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(93, 77);
+            this.checkBox1.Location = new System.Drawing.Point(88, 74);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(65, 17);
             this.checkBox1.TabIndex = 2;
@@ -1200,9 +1286,9 @@
             // dateTimePicker4
             // 
             this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker4.Location = new System.Drawing.Point(93, 40);
+            this.dateTimePicker4.Location = new System.Drawing.Point(90, 39);
             this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(184, 20);
+            this.dateTimePicker4.Size = new System.Drawing.Size(143, 20);
             this.dateTimePicker4.TabIndex = 1;
             // 
             // label17
@@ -1235,9 +1321,9 @@
             // dateTimePicker3
             // 
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker3.Location = new System.Drawing.Point(93, 9);
+            this.dateTimePicker3.Location = new System.Drawing.Point(90, 9);
             this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(184, 20);
+            this.dateTimePicker3.Size = new System.Drawing.Size(143, 20);
             this.dateTimePicker3.TabIndex = 1;
             // 
             // m_WalletTableAdapter1
@@ -1248,82 +1334,9 @@
             // 
             this.v_ActivityTableAdapter1.ClearBeforeFill = true;
             // 
-            // panelTitleListWallet
+            // t_ActivityTableAdapter1
             // 
-            this.panelTitleListWallet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTitleListWallet.Location = new System.Drawing.Point(2, 2);
-            this.panelTitleListWallet.Margin = new System.Windows.Forms.Padding(0);
-            this.panelTitleListWallet.Name = "panelTitleListWallet";
-            this.panelTitleListWallet.Size = new System.Drawing.Size(296, 25);
-            this.panelTitleListWallet.TabIndex = 2;
-            this.panelTitleListWallet.Title = "Danh sách ví";
-            this.panelTitleListWallet.Type = FinanceManagement.Custom.CustomTitlePanelType.MainTitle;
-            // 
-            // panelTitleWalletInfo
-            // 
-            this.panelTitleWalletInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTitleWalletInfo.Location = new System.Drawing.Point(2, 2);
-            this.panelTitleWalletInfo.Margin = new System.Windows.Forms.Padding(0);
-            this.panelTitleWalletInfo.Name = "panelTitleWalletInfo";
-            this.panelTitleWalletInfo.Size = new System.Drawing.Size(1066, 25);
-            this.panelTitleWalletInfo.TabIndex = 0;
-            this.panelTitleWalletInfo.Title = "Thông tin ví";
-            this.panelTitleWalletInfo.Type = FinanceManagement.Custom.CustomTitlePanelType.MainTitle;
-            // 
-            // panelTitleWithdraw
-            // 
-            this.panelTitleWithdraw.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTitleWithdraw.Location = new System.Drawing.Point(2, 2);
-            this.panelTitleWithdraw.Margin = new System.Windows.Forms.Padding(0);
-            this.panelTitleWithdraw.Name = "panelTitleWithdraw";
-            this.panelTitleWithdraw.Size = new System.Drawing.Size(762, 20);
-            this.panelTitleWithdraw.TabIndex = 0;
-            this.panelTitleWithdraw.Title = "Danh sách mục chi";
-            this.panelTitleWithdraw.Type = FinanceManagement.Custom.CustomTitlePanelType.SubTitle;
-            // 
-            // panelTitleDeposit
-            // 
-            this.panelTitleDeposit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTitleDeposit.Location = new System.Drawing.Point(2, 296);
-            this.panelTitleDeposit.Margin = new System.Windows.Forms.Padding(0);
-            this.panelTitleDeposit.Name = "panelTitleDeposit";
-            this.panelTitleDeposit.Size = new System.Drawing.Size(762, 20);
-            this.panelTitleDeposit.TabIndex = 1;
-            this.panelTitleDeposit.Title = "Danh sách mục thu và Chuyển khoản";
-            this.panelTitleDeposit.Type = FinanceManagement.Custom.CustomTitlePanelType.SubTitle;
-            // 
-            // panelTitleSearch
-            // 
-            this.panelTitleSearch.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTitleSearch.Location = new System.Drawing.Point(2, 2);
-            this.panelTitleSearch.Margin = new System.Windows.Forms.Padding(0);
-            this.panelTitleSearch.Name = "panelTitleSearch";
-            this.panelTitleSearch.Size = new System.Drawing.Size(296, 20);
-            this.panelTitleSearch.TabIndex = 0;
-            this.panelTitleSearch.Title = "Tra cứu thu chi";
-            this.panelTitleSearch.Type = FinanceManagement.Custom.CustomTitlePanelType.SubTitle;
-            // 
-            // panelTitlePrint
-            // 
-            this.panelTitlePrint.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTitlePrint.Location = new System.Drawing.Point(2, 190);
-            this.panelTitlePrint.Margin = new System.Windows.Forms.Padding(0);
-            this.panelTitlePrint.Name = "panelTitlePrint";
-            this.panelTitlePrint.Size = new System.Drawing.Size(296, 20);
-            this.panelTitlePrint.TabIndex = 1;
-            this.panelTitlePrint.Title = "In thông tin thu chi";
-            this.panelTitlePrint.Type = FinanceManagement.Custom.CustomTitlePanelType.SubTitle;
-            // 
-            // panelTitleSummary
-            // 
-            this.panelTitleSummary.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTitleSummary.Location = new System.Drawing.Point(2, 354);
-            this.panelTitleSummary.Margin = new System.Windows.Forms.Padding(0);
-            this.panelTitleSummary.Name = "panelTitleSummary";
-            this.panelTitleSummary.Size = new System.Drawing.Size(296, 20);
-            this.panelTitleSummary.TabIndex = 2;
-            this.panelTitleSummary.Title = "Thông tin ví";
-            this.panelTitleSummary.Type = FinanceManagement.Custom.CustomTitlePanelType.SummaryTitle;
+            this.t_ActivityTableAdapter1.ClearBeforeFill = true;
             // 
             // customTitlePanel5
             // 
@@ -1549,5 +1562,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn activityStatusDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
+        private DataSet.FinanceManagementTableAdapters.T_ActivityTableAdapter t_ActivityTableAdapter1;
     }
 }

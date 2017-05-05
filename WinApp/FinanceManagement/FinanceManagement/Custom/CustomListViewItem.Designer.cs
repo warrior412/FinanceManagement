@@ -48,7 +48,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
@@ -56,19 +56,18 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(308, 110);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(216, 110);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::FinanceManagement.Properties.Resources.Wallet_icon;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(94, 104);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.Size = new System.Drawing.Size(54, 104);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -83,13 +82,13 @@
             this.tableLayoutPanel2.Controls.Add(this.lblName, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblAmount, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 2);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(103, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(63, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(202, 104);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(150, 104);
             this.tableLayoutPanel2.TabIndex = 1;
             this.tableLayoutPanel2.Click += new System.EventHandler(this.tableLayoutPanel2_Click);
             // 
@@ -119,17 +118,18 @@
             this.panel1.Controls.Add(this.btnActivity);
             this.panel1.Controls.Add(this.btnEdit);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 74);
+            this.panel1.Location = new System.Drawing.Point(0, 71);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(196, 27);
+            this.panel1.Size = new System.Drawing.Size(150, 33);
             this.panel1.TabIndex = 2;
             // 
             // btnActivity
             // 
             this.btnActivity.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnActivity.Location = new System.Drawing.Point(30, 0);
+            this.btnActivity.Location = new System.Drawing.Point(6, 0);
             this.btnActivity.Name = "btnActivity";
-            this.btnActivity.Size = new System.Drawing.Size(84, 27);
+            this.btnActivity.Size = new System.Drawing.Size(84, 33);
             this.btnActivity.TabIndex = 1;
             this.btnActivity.Text = "Nhập thu chi";
             this.btnActivity.UseVisualStyleBackColor = true;
@@ -138,11 +138,11 @@
             // btnEdit
             // 
             this.btnEdit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnEdit.Location = new System.Drawing.Point(114, 0);
+            this.btnEdit.Location = new System.Drawing.Point(90, 0);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(82, 27);
+            this.btnEdit.Size = new System.Drawing.Size(60, 33);
             this.btnEdit.TabIndex = 0;
-            this.btnEdit.Text = "Chỉnh sửa";
+            this.btnEdit.Text = "Sửa";
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
@@ -153,7 +153,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "CustomListViewItem";
-            this.Size = new System.Drawing.Size(314, 116);
+            this.Size = new System.Drawing.Size(222, 116);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);

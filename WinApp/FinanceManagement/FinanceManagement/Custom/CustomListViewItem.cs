@@ -16,6 +16,14 @@ namespace FinanceManagement.Custom
         public event EventHandler OnItemClick;
         public event EventHandler OnReloadListView;
 
+        public bool OnSelected
+        {
+            set {
+                if (value)
+                    OnItemClick(this, null);
+            }
+        }
+
         private string walletID;
 
         public string WalletID
@@ -83,10 +91,12 @@ namespace FinanceManagement.Custom
         private void btnActivity_Click(object sender, EventArgs e)
         {
             frmActivityManagement frm = new frmActivityManagement(itemData);
-            if(frm.ShowDialog()==DialogResult.OK)
+            frm.FormClosing += delegate
             {
-
-            }
+                if (OnReloadListView != null)
+                    OnReloadListView(this, e);
+            };
+            frm.ShowDialog();
         }
 
 

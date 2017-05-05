@@ -81,6 +81,9 @@ namespace FinanceManagement
                 ContextMenu m = new ContextMenu();
                 int currentMouseOverRow = dvCategory.HitTest(e.X, e.Y).RowIndex;
 
+                if (currentMouseOverRow < 0)
+                    return;
+
                 dvCategory.CurrentCell = dvCategory.Rows[currentMouseOverRow].Cells[0];
                 dvCategory.Rows[currentMouseOverRow].Selected = true;
                 dvCategory.Focus();
@@ -100,6 +103,39 @@ namespace FinanceManagement
                 
 
                 m.Show(dvCategory, new Point(e.X, e.Y));
+
+            }
+        }
+
+        private void dvItem_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+
+
+                ContextMenu m = new ContextMenu();
+                int currentMouseOverRow = dvItem.HitTest(e.X, e.Y).RowIndex;
+                if (currentMouseOverRow < 0)
+                    return;
+                dvItem.CurrentCell = dvItem.Rows[currentMouseOverRow].Cells[1];
+                dvItem.Rows[currentMouseOverRow].Selected = true;
+                dvItem.Focus();
+
+                m.MenuItems.Add(new MenuItem("Chỉnh sửa", (o, ev) =>
+                {
+
+                    frmItemInfo frm = new frmItemInfo(currentCategory,currentItem);
+                    if (frm.ShowDialog() == DialogResult.OK)
+                    {
+                        FillData();
+                    }
+                }));
+                m.MenuItems.Add(new MenuItem("Đóng"));
+
+
+
+
+                m.Show(dvItem, new Point(e.X, e.Y));
 
             }
         }
