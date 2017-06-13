@@ -49,3 +49,4 @@ D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagemen
 D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.exe
 D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.pdb
 D:\JunF\Projects\FinanceManagement_Git\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.csprojResolveAssemblyReference.cache
+C:\JunF's Drive\GitHub\FinanceManagement\WinApp\FinanceManagement\FinanceManagement\obj\Debug\FinanceManagement.Custom.CustomProgressBar.resources
